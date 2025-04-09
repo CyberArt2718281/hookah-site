@@ -169,7 +169,7 @@ $(document).ready(function () {
       "paragraph": "Сессия на классической чаше рассчитана на компанию до 3 гостей",
       "price": 750,
       "category": "кальяны",
-      "img": "../src/assets/product-1.png"
+      "img": "../assets/product-1.png"
     },
     {
       "id": 2,
@@ -178,7 +178,7 @@ $(document).ready(function () {
       "paragraph": "Максимальная длительность курения кальяна - 90 минут.",
       "price": 1500,
       "category": "кальяны",
-      "img": "../src/assets/product-2.png"
+      "img": "../assets/product-2.png"
     },
     {
       "id": 3,
@@ -187,7 +187,7 @@ $(document).ready(function () {
       "paragraph": "Один перезабив табака и добавки в колбу бесплатно.",
       "price": 2000,
       "category": "кальяны",
-      "img": "../src/assets/product-3.png"
+      "img": "../assets/product-3.png"
     },
     {
       "id": 4,
@@ -204,16 +204,16 @@ $(document).ready(function () {
       "paragraph": "Идеально для компании из 2-4 человек.",
       "price": 1200,
       "category": "закуски",
-      "img": "../src/assets/food-1.jpeg"
+      "img": "../assets/food-1.jpeg"
     },
     {
       "id": 6,
       "title": "Мясное ассорти",
       "subtitle": "Разнообразие мясных деликатесов",
-      "paragraph": "Подается с горчицей и хлебом.",
+      "paragraph": "Подается с горчицей и хрестом.",
       "price": 1500,
       "category": "закуски",
-      "img": "../src/assets/food-2.jpeg"
+      "img": "../assets/food-2.jpeg"
     },
     {
       "id": 7,
@@ -222,7 +222,7 @@ $(document).ready(function () {
       "paragraph": "Подается с оливковым маслом и специями.",
       "price": 800,
       "category": "закуски",
-      "img": "../src/assets/food-3.jpeg"
+      "img": "../assets/food-3.jpeg"
     },
     {
       "id": 8,
@@ -231,7 +231,7 @@ $(document).ready(function () {
       "paragraph": "Подается с соусами на выбор.",
       "price": 600,
       "category": "закуски",
-      "img": "../src/assets/food-4.jpeg"
+      "img": "../assets/food-4.jpeg"
     },
     {
       "id": 9,
@@ -240,7 +240,7 @@ $(document).ready(function () {
       "paragraph": "Подается с лимоном или медом.",
       "price": 300,
       "category": "чай и б/а коктейли",
-      "img": "../src/assets/drink-1.jpeg"
+      "img": "../assets/drink-1.jpeg"
     },
     {
       "id": 10,
@@ -249,7 +249,7 @@ $(document).ready(function () {
       "paragraph": "Подается с молоком или сахаром.",
       "price": 300,
       "category": "чай и б/а коктейли",
-      "img": "../src/assets/drink-2.jpeg"
+      "img": "../assets/drink-2.jpeg"
     },
     {
       "id": 11,
@@ -258,7 +258,7 @@ $(document).ready(function () {
       "paragraph": "С лаймом, мятой и льдом.",
       "price": 500,
       "category": "чай и б/а коктейли",
-      "img": "../src/assets/drink-3.jpeg"
+      "img": "../assets/drink-3.jpeg"
     },
     {
       "id": 12,
@@ -267,7 +267,7 @@ $(document).ready(function () {
       "paragraph": "Свежий лимон, мята и лед.",
       "price": 400,
       "category": "чай и б/а коктейли",
-      "img": "../src/assets/drink-4.jpeg"
+      "img": "../assets/drink-4.jpeg"
     },
     {
       "id": 13,
@@ -276,7 +276,7 @@ $(document).ready(function () {
       "paragraph": "Подается со льдом или водой.",
       "price": 1500,
       "category": "барная карта",
-      "img": "../src/assets/bar-1.jpeg"
+      "img": "../assets/bar-1.jpeg"
     },
     {
       "id": 14,
@@ -285,7 +285,7 @@ $(document).ready(function () {
       "paragraph": "Подается охлажденной.",
       "price": 1000,
       "category": "барная карта",
-      "img": "../src/assets/bar-2.jpeg"
+      "img": "../assets/bar-2.jpeg"
     },
     {
       "id": 15,
@@ -294,7 +294,7 @@ $(document).ready(function () {
       "paragraph": "С текилой, лаймом и солью.",
       "price": 1200,
       "category": "барная карта",
-      "img": "../src/assets/bar-3.jpeg"
+      "img": "../assets/bar-3.jpeg"
     },
     {
       "id": 16,
@@ -303,7 +303,7 @@ $(document).ready(function () {
       "paragraph": "Подается охлажденным.",
       "price": 500,
       "category": "барная карта",
-      "img": "../src/assets/bar-4.jpeg"
+      "img": "../assets/bar-4.jpeg"
     }
   ]
 }
