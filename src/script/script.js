@@ -46,6 +46,14 @@ $(document).ready(function () {
                     slidesToScroll: 1,
                 }
             }, {
+                breakpoint: 375,
+                settings: {
+                    arrows: false,
+                    dots: false,
+                    slidesToScroll: 1,
+                    slidesToShow: 1,
+                }
+            },{
                 breakpoint: 320,
                 settings: {
                     arrows: false,
@@ -294,7 +302,7 @@ $(document).ready(function () {
     });
 
     function updateLayout() {
-        const isExactly320px = window.innerWidth === 320;
+        const isExactly320px = window.innerWidth <= 375;
         $('.promotions-dots-container, .gallery-dots-container').hide();
         $('.prev').hide();
         $('.next').hide();
@@ -417,7 +425,7 @@ $(document).ready(function () {
         $(window).on('resize', function () {
             const newWidth = window.innerWidth;
 
-            if ((currentWidth === 320 || newWidth === 320) && currentWidth !== newWidth) {
+            if ((currentWidth <= 375 || newWidth <= 375) && currentWidth !== newWidth) {
                 updateLayout();
             }
             currentWidth = newWidth;
