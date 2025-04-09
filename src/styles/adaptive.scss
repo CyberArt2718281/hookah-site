@@ -392,7 +392,6 @@
   .prev{
     display: none;
   }
-
   .header {
     padding: 20px 0 20px 0;
 
@@ -440,6 +439,9 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+    }
+    .main-image-circle{
+      animation: unset;
     }
 
     .main-text {
@@ -747,7 +749,7 @@
           width: unset;
           max-width: 290px;
           margin-bottom: 20px;
-          padding: 16px;
+          padding: 20px 0 15px 20px;
           font-size: 13px;
           text-align: left;
         }
@@ -867,7 +869,9 @@
       justify-content: center;
       align-items: center;
     }
-
+    .main-image-circle{
+      animation: unset;
+    }
     .main-text-title {
       font-size: 24px;
       font-family: "Panton-ExtraBold", sans-serif;
