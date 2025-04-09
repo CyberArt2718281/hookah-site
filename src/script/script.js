@@ -53,7 +53,7 @@ $(document).ready(function () {
                     slidesToScroll: 1,
                     slidesToShow: 1,
                 }
-            },{
+            }, {
                 breakpoint: 320,
                 settings: {
                     arrows: false,
@@ -89,7 +89,6 @@ $(document).ready(function () {
         let hasError = false;
         $('.error').css('opacity', '0');
         $('.input').css('border', '1px solid rgb(98, 36, 223)');
-
 
 
         if (!name) {
@@ -160,24 +159,167 @@ $(document).ready(function () {
                 });
         }
     });
-
+    const data = `
+    {
+  "data": [
+    {
+      "id": 1,
+      "title": "Классическая чаша",
+      "subtitle": "Табак на выбор (в ассортименте)",
+      "paragraph": "Сессия на классической чаше рассчитана на компанию до 3 гостей",
+      "price": 750,
+      "category": "кальяны",
+      "img": "../src/assets/product-1.png"
+    },
+    {
+      "id": 2,
+      "title": "Кальян на фрукте",
+      "subtitle": "Фрукт на выбор: ананас, грейпфрут, гранат.",
+      "paragraph": "Максимальная длительность курения кальяна - 90 минут.",
+      "price": 1500,
+      "category": "кальяны",
+      "img": "../src/assets/product-2.png"
+    },
+    {
+      "id": 3,
+      "title": "Классическая чаша",
+      "subtitle": "Используется кальян с подсветкой и премиальный табак",
+      "paragraph": "Один перезабив табака и добавки в колбу бесплатно.",
+      "price": 2000,
+      "category": "кальяны",
+      "img": "../src/assets/product-3.png"
+    },
+    {
+      "id": 4,
+      "title": "Дополнительно",
+      "subtitle": "Добавки в колбу на выбор:",
+      "paragraph": "-молоко -сок -сиропы -ликер",
+      "price": 200,
+      "category": "кальяны"
+    },
+    {
+      "id": 5,
+      "title": "Сырная тарелка",
+      "subtitle": "Ассорти из сыров с орехами и виноградом",
+      "paragraph": "Идеально для компании из 2-4 человек.",
+      "price": 1200,
+      "category": "закуски",
+      "img": "../src/assets/food-1.jpeg"
+    },
+    {
+      "id": 6,
+      "title": "Мясное ассорти",
+      "subtitle": "Разнообразие мясных деликатесов",
+      "paragraph": "Подается с горчицей и хлебом.",
+      "price": 1500,
+      "category": "закуски",
+      "img": "../src/assets/food-2.jpeg"
+    },
+    {
+      "id": 7,
+      "title": "Оливки и маслины",
+      "subtitle": "Ассорти из оливок и маслин",
+      "paragraph": "Подается с оливковым маслом и специями.",
+      "price": 800,
+      "category": "закуски",
+      "img": "../src/assets/food-3.jpeg"
+    },
+    {
+      "id": 8,
+      "title": "Картофель фри",
+      "subtitle": "Хрустящий картофель фри",
+      "paragraph": "Подается с соусами на выбор.",
+      "price": 600,
+      "category": "закуски",
+      "img": "../src/assets/food-4.jpeg"
+    },
+    {
+      "id": 9,
+      "title": "Зеленый чай",
+      "subtitle": "Свежезаваренный зеленый чай",
+      "paragraph": "Подается с лимоном или медом.",
+      "price": 300,
+      "category": "чай и б/а коктейли",
+      "img": "../src/assets/drink-1.jpeg"
+    },
+    {
+      "id": 10,
+      "title": "Черный чай",
+      "subtitle": "Крепкий черный чай",
+      "paragraph": "Подается с молоком или сахаром.",
+      "price": 300,
+      "category": "чай и б/а коктейли",
+      "img": "../src/assets/drink-2.jpeg"
+    },
+    {
+      "id": 11,
+      "title": "Мохито безалкогольный",
+      "subtitle": "Освежающий мохито без алкоголя",
+      "paragraph": "С лаймом, мятой и льдом.",
+      "price": 500,
+      "category": "чай и б/а коктейли",
+      "img": "../src/assets/drink-3.jpeg"
+    },
+    {
+      "id": 12,
+      "title": "Лимонад",
+      "subtitle": "Домашний лимонад",
+      "paragraph": "Свежий лимон, мята и лед.",
+      "price": 400,
+      "category": "чай и б/а коктейли",
+      "img": "../src/assets/drink-4.jpeg"
+    },
+    {
+      "id": 13,
+      "title": "Виски",
+      "subtitle": "Элитный виски",
+      "paragraph": "Подается со льдом или водой.",
+      "price": 1500,
+      "category": "барная карта",
+      "img": "../src/assets/bar-1.jpeg"
+    },
+    {
+      "id": 14,
+      "title": "Водка",
+      "subtitle": "Классическая русская водка",
+      "paragraph": "Подается охлажденной.",
+      "price": 1000,
+      "category": "барная карта",
+      "img": "../src/assets/bar-2.jpeg"
+    },
+    {
+      "id": 15,
+      "title": "Коктейль Маргарита",
+      "subtitle": "Классический коктейль",
+      "paragraph": "С текилой, лаймом и солью.",
+      "price": 1200,
+      "category": "барная карта",
+      "img": "../src/assets/bar-3.jpeg"
+    },
+    {
+      "id": 16,
+      "title": "Пиво",
+      "subtitle": "Свежее разливное пиво",
+      "paragraph": "Подается охлажденным.",
+      "price": 500,
+      "category": "барная карта",
+      "img": "../src/assets/bar-4.jpeg"
+    }
+  ]
+}
+    `
+    const json = JSON.parse(data);
     const bar = $('#bar');
     const hookah = $('#hookah');
     const drink = $('#drink');
     const food = $('#food');
-    fetch('http://localhost:3000/data', {
-        method: 'GET'
-    })
-        .then((response) => {
-            return response.json();
-        })
-        .then((json) => {
-            function renderProducts(category) {
-                let htmlContent = '';
-                json.forEach((item) => {
-                    if (item['category'] === category) {
-                        if (item['title'].toLowerCase() === 'дополнительно') {
-                            htmlContent += `
+
+    function renderProducts(category) {
+        let htmlContent = '';
+        json.data.forEach((item) => {
+            if (item['category'] === category) {
+                if (item['title'].toLowerCase() === 'дополнительно') {
+                    htmlContent += `
                                 <div class="products-item none-border wow animate__fadeInUp">
                                     <div class="products-item-text">
                                         <div class="products-item-title">${item['title']}</div>
@@ -189,8 +331,8 @@ $(document).ready(function () {
                                     </div>
                                 </div>
                             `;
-                        } else {
-                            htmlContent += `
+                } else {
+                    htmlContent += `
                                 <div class="products-item wow animate__fadeInUp">
                                     <div class="products-item-text">
                                         <div class="products-item-title">${item['title']}</div>
@@ -201,52 +343,52 @@ $(document).ready(function () {
                                     ${item['img'] ? `<img src="${item['img']}" alt="${item['title']}">` : ''}
                                 </div>
                             `;
-                        }
-                    }
-                });
-                $('.products-items').html(htmlContent);
+                }
             }
+        });
+        $('.products-items').html(htmlContent);
+    }
 
-            hookah.click(function() {
-                // Удаляем класс active у всех кнопок и скрываем их border-bot
-                $('.menu-item-link').removeClass('active');
-                $('.border-bot').css('opacity', '0');
+    hookah.click(function () {
+        // Удаляем класс active у всех кнопок и скрываем их border-bot
+        $('.menu-item-link').removeClass('active');
+        $('.border-bot').css('opacity', '0');
 
-                // Добавляем класс active к текущей кнопке и показываем её border-bot
-                $(this).addClass('active');
-                $(this).next('.border-bot').css('opacity', '1');
+        // Добавляем класс active к текущей кнопке и показываем её border-bot
+        $(this).addClass('active');
+        $(this).next('.border-bot').css('opacity', '1');
 
-                renderProducts('кальяны');
-            });
+        renderProducts('кальяны');
+    });
 
-            food.click(function() {
-                $('.menu-item-link').removeClass('active');
-                $('.border-bot').css('opacity', '0');
-                $(this).addClass('active');
-                $(this).next('.border-bot').css('opacity', '1');
-                renderProducts('закуски');
-            });
+    food.click(function () {
+        $('.menu-item-link').removeClass('active');
+        $('.border-bot').css('opacity', '0');
+        $(this).addClass('active');
+        $(this).next('.border-bot').css('opacity', '1');
+        renderProducts('закуски');
+    });
 
-            drink.click(function() {
-                $('.menu-item-link').removeClass('active');
-                $('.border-bot').css('opacity', '0');
-                $(this).addClass('active');
-                $(this).next('.border-bot').css('opacity', '1');
-                renderProducts('чай и б/а коктейли');
-            });
+    drink.click(function () {
+        $('.menu-item-link').removeClass('active');
+        $('.border-bot').css('opacity', '0');
+        $(this).addClass('active');
+        $(this).next('.border-bot').css('opacity', '1');
+        renderProducts('чай и б/а коктейли');
+    });
 
-            bar.click(function() {
-                $('.menu-item-link').removeClass('active');
-                $('.border-bot').css('opacity', '0');
-                $(this).addClass('active');
-                $(this).next('.border-bot').css('opacity', '1');
-                renderProducts('барная карта');
-            });
+    bar.click(function () {
+        $('.menu-item-link').removeClass('active');
+        $('.border-bot').css('opacity', '0');
+        $(this).addClass('active');
+        $(this).next('.border-bot').css('opacity', '1');
+        renderProducts('барная карта');
+    });
 
 // Инициализация - делаем первую вкладку активной при загрузке
-            hookah.addClass('active');
-            hookah.next('.border-bot').css('opacity', '1');
-        });
+    hookah.addClass('active');
+    hookah.next('.border-bot').css('opacity', '1');
+
     $('#date').text(`${new Date().getFullYear()}`)
     let center = [55.7422267565145, 37.65525091393979];
 
