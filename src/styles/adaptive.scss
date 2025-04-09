@@ -386,7 +386,12 @@
 
 
 @media (max-width: 375px) {
-
+  .next{
+    display: none;
+  }
+  .prev{
+    display: none;
+  }
 
   .header {
     padding: 20px 0 20px 0;
