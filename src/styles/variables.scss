@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth;
+  }
+}
+
+@font-face {
+  font-family: Montserrat-Regular;
+  src: url("../assets/font/Montserrat-Regular.ttf");
+}
+
+@font-face {
+  font-family: Montserrat-ExtraLight;
+  src: url("../assets/font/Montserrat-ExtraLight.ttf");
+}
+
+@font-face {
+  font-family: Panton-Regular;
+  src: url("../assets/font/Panton-Trial-Regular.ttf");
+}
+
+@font-face {
+  font-family: Panton-ExtraBold;
+  src: url("../assets/font/Panton-Trial-ExtraBold.ttf");
+}
+
+$bg-color: rgb(7, 0, 21);
+$violet-first: #8e67da;
+$violet-second: rgb(98, 36, 223);
+$white-color: rgb(255, 255, 255);
+
+
+@mixin box-shadow{
+  box-shadow: 0 0 5px $violet-first;
+}
+@mixin border{
+  border:1px solid $violet-second;
+}
