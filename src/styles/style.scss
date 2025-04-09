@@ -907,6 +907,11 @@ body {
           color: $white-color;
           outline: none;
         }
+        @media (max-width: 375px) {
+          input{
+            padding: 20px 0 20px 17px;
+          }
+        }
         .form-input-number{
           margin-bottom: 40px;
           &::placeholder {
