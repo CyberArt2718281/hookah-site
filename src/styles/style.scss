@@ -214,15 +214,15 @@ body {
         left: -25px;
         background: $bg-color;
         border-radius: 50%;
-        animation: pulse 2s linear infinite alternate;
-        @keyframes pulse {
-          0% {
-            box-shadow: 0 0 0 $violet-first;
-          }
-          100% {
-            @include box-shadow();
-          }
-        }
+        //animation: pulse 2s linear infinite alternate;
+        //@keyframes pulse {
+        //  0% {
+        //    box-shadow: 0 0 0 $violet-first;
+        //  }
+        //  100% {
+        //    @include box-shadow();
+        //  }
+        //}
 
         .main-image-discount {
           border-radius: 50%;
@@ -715,7 +715,7 @@ body {
         width: 151px;
         height: 220px;
       }
-      
+
 
       &.none-border {
         border: none;
