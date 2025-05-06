@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth;
+  }
+}
+@font-face {
+  font-family: Montserrat-Regular;
+  src: url("../font/Montserrat-Regular.ttf");
+}
+@font-face {
+  font-family: Montserrat-ExtraLight;
+  src: url("../font/Montserrat-ExtraLight.ttf");
+}
+@font-face {
+  font-family: Panton-Regular;
+  src: url("../font/Panton-Trial-Regular.ttf");
+}
+@font-face {
+  font-family: Panton-ExtraBold;
+  src: url("../font/Panton-Trial-ExtraBold.ttf");
+}
+
+/*# sourceMappingURL=variables.css.map */

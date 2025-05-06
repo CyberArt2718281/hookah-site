@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>smoke city</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="src/styles/normalize.css">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey={api ключ}&lang=ru_RU" type="text/javascript"></script>
+    <link rel="stylesheet" href="src/styles/slick.css">
+    <link rel="stylesheet" href="src/styles/slick-theme.css">
+    <link rel="stylesheet" href="src/styles/animate.min.css">
+    <link rel="stylesheet" href='src/styles/style.css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<div class="main-header-section">
+    <header class="header">
+        <div class="container header-container">
+            <div class="block-logo logo-header">
+                <img src="src/assets/logo.png" alt="logo">
+                <div class="header-burger" id="burger">
+                    <svg
+
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            width="40px" height="22px">
+                        <path fill-rule="evenodd" fill="rgb(98, 36, 223)"
+                              d="M0.000,-0.000 L40.000,-0.000 L40.000,2.000 L0.000,2.000 L0.000,-0.000 Z"/>
+                        <path fill-rule="evenodd" fill="rgb(98, 36, 223)"
+                              d="M0.000,10.000 L40.000,10.000 L40.000,12.000 L0.000,12.000 L0.000,10.000 Z"/>
+                        <path fill-rule="evenodd" fill="rgb(98, 36, 223)"
+                              d="M0.000,20.000 L40.000,20.000 L40.000,22.000 L0.000,22.000 L0.000,20.000 Z"/>
+                    </svg>
+                </div>
+            </div>
+
+            <nav class="menu" id="menu">
+                <div class="menu-close">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                         viewBox="0 0 492 492" style="enable-background:new 0 0 492 492;" xml:space="preserve">
+<g>
+	<g>
+		<path d="M300.188,246L484.14,62.04c5.06-5.064,7.852-11.82,7.86-19.024c0-7.208-2.792-13.972-7.86-19.028L468.02,7.872
+			c-5.068-5.076-11.824-7.856-19.036-7.856c-7.2,0-13.956,2.78-19.024,7.856L246.008,191.82L62.048,7.872
+			c-5.06-5.076-11.82-7.856-19.028-7.856c-7.2,0-13.96,2.78-19.02,7.856L7.872,23.988c-10.496,10.496-10.496,27.568,0,38.052
+			L191.828,246L7.872,429.952c-5.064,5.072-7.852,11.828-7.852,19.032c0,7.204,2.788,13.96,7.852,19.028l16.124,16.116
+			c5.06,5.072,11.824,7.856,19.02,7.856c7.208,0,13.968-2.784,19.028-7.856l183.96-183.952l183.952,183.952
+			c5.068,5.072,11.824,7.856,19.024,7.856h0.008c7.204,0,13.96-2.784,19.028-7.856l16.12-16.116
+			c5.06-5.064,7.852-11.824,7.852-19.028c0-7.204-2.792-13.96-7.852-19.028L300.188,246z"/>
+	</g>
+</g>
+</svg>
+                </div>
+                <ul class="menu-items">
+                    <li class="menu-item">
+                        <a href="#advantages">О нас</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#products">Меню</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#gallery">Галерея</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#contacts">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="group-block-header">
+                <div class="block-time block-time-header">
+                    <div class="block-time-clock" >
+                        <svg id="clock-time"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25"
+                             height="25" viewBox="0 0 25 25">
+                            <image id="clock" width="25" height="25"
+                                   xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAABtUlEQVRIib2WMS8EURSFP29FotioFCqVbVcj2+t0oiEKsn9gCwmlSkf8CAlRiJLfIBqNZju1hmxhI9aRx5lkM2ZmZ1hOcvNm5t17Tm7u3PvehCQKUAfWgBVgCZgHasAAeABugWvgEujl0eSJTAO7wA4wY9I7oAu8AlNAA1i06DNwDBwCL9/YokjKmpK6+sK9pLakeoYf/t62nxzXTPulg5Yl9ST1JXUkhRzytAX79x2/nCfStMOjpFYO2ZykVa9Z+y3H94YzSjannWq/QAALyGueT8s8XfMSXJpY5AVgD7gp+t1K4MY8C+YlKd6TizeqBmUySWp0b956cB/E3/QIeP9lFgnezRd514IbLfbBxZgEElyYdyW4k++KOvaH6Jl3KXhUdMcskCDyzgePhdeSQQOvG44bhchbCw6cKilyBZwB68BJCaHIO5j0NG1UyGTLz5tet4YyTKPxyS/pXNJbwRDMspqkU/fMqd+zhmfkPY8v23ZuVxBJCx1k7Le9t12147OEosBsUccnH/et2qkokmcd8+3/ZAqXsW9TuOp5MsoKz5PE/vxkHM5orGf8v9xW/v7eBXwAQOlVaGSDXIIAAAAASUVORK5CYII="/>
+                        </svg>
+                    </div>
+                    <div class="block-time-text" id="text-time">
+                        Пн-Чт с 18 до 00 Пт-Сб с 20 до 5
+                    </div>
+                </div>
+                <div class="block-number">
+                    <div class="block-time-phone-svg">
+                        <svg id='phone-call-svg'  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48"
+                             height="48" viewBox="0 0 48 48">
+                            <image id="phone-call" width="48" height="48"
+                                   xlink:href="data:img/png;base64,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"/>
+                        </svg>
+                    </div>
+                    <div class="block-time-call">
+                        <div class="block-number-phone">
+                            8 900-500-10-10
+                        </div>
+                        <div class="block-number-call">Звоните нам</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main" id="main">
+        <div class="container main-container">
+            <div class="main-text wow animate__backInLeft">
+                <div class="main-text-title">С нами вы почувствуете дымный вкус жизни!</div>
+                <div class="main-text-subtitle">Только качественный табак и лучшее обслуживание. Мы создаем тренды в
+                    кальянных тусовках и у нас
+                    каждый сможет почувствовать себя важным
+                    гостем и неотъемлемой частью заведения.</div>
+                <button class="button main-button" id="main-button">
+                    Забронировать стол
+                </button>
+            </div>
+            <div class="main-image wow animate__backInRight">
+                <img src="src/assets/hookah.png" alt="кальян" class="main-kalyan">
+                <div class="main-image-circle">
+                    <div class="main-image-discount">
+                        <div class="main-image-discount-text">Новым гостям 15% скидки !</div>
+                    </div>
+                </div>
+                <img src="src/assets/main-sparks.png" alt="уголь" class="main-ygol">
+            </div>
+        </div>
+    </main>
+</div>
+
+<section class="advantages" id="advantages">
+    <div class="container container-advantages">
+        <div class="advantages-items">
+            <div class="advantages-item wow animate__fadeInLeft" data-wow-delay="0.1s">
+                <img src="src/assets/advantage-1.png" alt="табак" id="advantages-image-1">
+                <div class="advantages-item-text">
+                    <div class="advantages-item-text-title">Лучшие вкусы табака</div>
+                    <div class="advantages-item-text-subtitle">В нашем ассортименте представлены как эталонные бренды
+                        и вкусы, так и самые актуальные и крафтовые новинки со всего мира.
+                    </div>
+                </div>
+            </div>
+            <div class="advantages-item wow animate__fadeInRight" id="advantages-image-2" data-wow-delay="0.2s" >
+                <img src="src/assets/advantage-2.png" alt="люди">
+                <div class="advantages-item-text">
+                    <div class="advantages-item-text-title">Дискотеки каждую субботу</div>
+                    <div class="advantages-item-text-subtitle">По субботам спокойствие и размеренность уходят
+                        на второй план, ведь начиная с 20:00 за пульты встают наши диджеи и начинаются веселые танцы.
+                    </div>
+                </div>
+            </div>
+            <div class="advantages-item wow animate__fadeInLeft">
+                <img src="src/assets/advantage-3.png" alt="вип-комната" id="advantages-image-3" data-wow-delay="0.3s">
+                <div class="advantages-item-text">
+                    <div class="advantages-item-text-title">Отдельные VIP-комнаты</div>
+                    <div class="advantages-item-text-subtitle">Для больших компаний есть комфортныеVIP-комнаты, где
+                        каждый сможет отметить свой праздник или просто хорошо отдохнуть.
+                    </div>
+                </div>
+            </div>
+            <div class="advantages-item advantages-item-none-border wow animate__fadeInRight" data-wow-delay="0.4s">
+                <div class="advantages-item-text-title">А еще...</div>
+                <div class="advantages-item-text-subtitle">Элитные сорта чая, авторские коктейли и лучшие настольные и
+                    видео-игры.
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="staff" id="staff">
+    <div class="container staff-container">
+        <div class="staff-top-block wow animate__bounceInLeft">
+            <div class="staff-top-title">
+                Наши мастера
+            </div>
+            <div class="staff-top-subtitle">
+                Наши кальянщики виртуозно соорудят ароматную забивку, чтобы вы получили максимальное удовольствие от
+                курения.
+            </div>
+        </div>
+        <div class="slider staff-slider">
+            <div class="slide wow animate__zoomIn">
+                <img src="src/assets/staff-1.png" alt="Maksim">
+                <div class="slide-text">
+                    <div class="slide-text-title">
+                        Максим, 22 года
+                    </div>
+                    <div class="slide-text-experience">
+                        Стаж работы: 2 года
+                    </div>
+                    <div class="slide-text-bottom">
+                        Забивает самые необычные вкусы в ваш кальян.
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="slide wow animate__zoomIn">
+                <img src="src/assets/staff-2.png" alt="Maksim">
+                <div class="slide-text">
+                    <div class="slide-text-title">
+                        Андрей, 19 лет
+                    </div>
+                    <div class="slide-text-experience">
+                        Стаж работы: 8 месяцев
+                    </div>
+                    <div class="slide-text-bottom">
+                        Профессионально сыграет <span class="slide-text-bottom-overflow">c вами в видео-игры во время перерыва:)</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="slide wow animate__zoomIn">
+                <img src="src/assets/staff-3.png" alt="Maksim">
+                <div class="slide-text">
+                    <div class="slide-text-title">
+                        Савелий, 21 год
+                    </div>
+                    <div class="slide-text-experience">
+                        Стаж работы: 1,5 года
+                    </div>
+                    <div class="slide-text-bottom">
+                        Мастер оригинальных коктейлей и лучше всех заваривает чай!
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="slide">
+                <img src="src/assets/staff-3.png" alt="Maksim">
+                <div class="slide-text">
+                    <div class="slide-text-title">
+                        Савелий, 21 год
+                    </div>
+                    <div class="slide-text-experience">
+                        Стаж работы: 1,5 года
+                    </div>
+                    <div class="slide-text-bottom">
+                        Мастер оригинальных коктейлей и лучше всех заваривает чай!
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="slider-buttons">
+            <button class="button-arrow prev">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"/>
+                </svg>
+            </button>
+            <button class="button-arrow next">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+</section>
+<section class="products" id="products">
+    <div class="container products-container">
+        <div class="products-text wow animate__fadeInLeft">
+            <div class="products-text-title">
+                Наше меню
+            </div>
+            <nav class="menu">
+                <ul class="menu-items" id="products-menu">
+                    <li class="menu-item">
+                        <div class="menu-item-link" id="hookah">Кальяны</div>
+                        <div class="border-bot"></div>
+                    </li>
+                    <li class="menu-item">
+                        <div class="menu-item-link" id="food">Закуски</div>
+                        <div class="border-bot"></div>
+                    </li>
+                    <li class="menu-item">
+                        <div class="menu-item-link" id="drink">Чай и б/а коктейли</div>
+                        <div class="border-bot"></div>
+                    </li>
+                    <li class="menu-item">
+                        <div class="menu-item-link" id="bar">Барная карта</div>
+                        <div class="border-bot"></div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="products-items">
+            <div class="products-item wow animate__fadeInUp" data-wow-delay="0.1s">
+                <div class="products-item-text">
+                    <div class="products-item-title">Классическая чаша</div>
+                    <div class="products-item-subtitle-top">Табак на выбор (в ассортименте)</div>
+                    <div class="products-item-subtitle-bottom">Сессия на классической чаше рассчитана на компанию
+                        до 3 гостей.
+                    </div>
+                    <div class="products-item-price">750 руб.</div>
+                </div>
+                <img src="src/assets/product-1.png" alt="">
+            </div>
+            <div class="products-item wow animate__fadeInUp" data-wow-delay="0.2s">
+                <div class="products-item-text">
+                    <div class="products-item-title">Кальян на фрукте</div>
+                    <div class="products-item-subtitle-top">Фрукт на выбор: ананас,
+                        грейпфрут,гранат.
+                    </div>
+                    <div class="products-item-subtitle-bottom">Максимальная длительность курения кальяна - 90 минут.
+                    </div>
+                    <div class="products-item-price">1500 руб.</div>
+                </div>
+                <img src="src/assets/product-2.png" alt="">
+            </div>
+            <div class="products-item wow animate__fadeInUp" data-wow-delay="0.3s">
+                <div class="products-item-text">
+                    <div class="products-item-title">Классическая чаша</div>
+                    <div class="products-item-subtitle-top">Используется кальян с подсветкой и премиальный табак.</div>
+                    <div class="products-item-subtitle-bottom">Один перезабив табака и добавки в колбу бесплатно.</div>
+                    <div class="products-item-price">2000 руб.</div>
+                </div>
+                <img src="src/assets/product-3.png" alt="">
+            </div>
+            <div class="products-item none-border wow animate__fadeInUp" data-wow-delay="0.4s">
+                <div class="products-item-text">
+                    <div class="products-item-title">Дополнительно</div>
+                    <div class="products-item-subtitle-top-text">Добавки в колбу на выбор:</div>
+                    <div class="products-item-subtitle-bottom-text">
+                        -молоко
+                        -сок
+                        -сиропы
+                        -ликер
+                    </div>
+                    <div class="products-item-price">200 руб.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="promotions" id="promotions">
+    <div class="container promotions-container">
+        <div class="promotions-text wow animate__fadeInLeft">
+            <div class="promotions-text-title">Наши акции</div>
+            <div class="promotions-text-subtitle">Все акции действительны с 1.12.2020
+                до 31.12.2020. Подробности уточняйте по телефону или у официанта.
+            </div>
+        </div>
+        <div class="promotions-items" id="promotions-slider">
+            <div class="promotions-item wow animate__backInUp" data-wow-delay="0.1s">
+
+                <img src="src/assets/promotions-image-3.png" alt="кальян">
+                <div class="promotions-item-text">
+                    Скидка 25% на любой кальян
+                    с понедельника по четверг.
+                </div>
+            </div>
+            <div class="promotions-item wow animate__backInUp" data-wow-delay="0.2s">
+                <img src="src/assets/promotions-image-2.png" alt="чай">
+                <div class="promotions-item-text">
+                    При покупке любого премиум кальяна
+                    1 л чая в подарок!
+                </div>
+            </div>
+            <div class="promotions-item wow animate__backInUp" data-wow-delay="0.3s">
+                <img src="src/assets/promotions-image-1.png" alt="@smoke_city">
+                <div class="promotions-item-text">
+                    Отметьте нас в Instagram @smoke_city
+                    и получите скидку 10% на действующий заказ.
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="gallery" id="gallery">
+    <div class="container gallery-container">
+        <div class="gallery-title wow animate__fadeInLeft">Посмотрите нашу обстановку внутри</div>
+        <div class="gallery-items" id="gallery-slider">
+            <div class="gallery-item" >
+                <img src="src/assets/gallery-1.png" alt="gallery-1" class="wow animate__fadeInUp">
+            </div>
+            <div class="gallery-item" data-wow-delay="0.1s">
+                <img src="src/assets/gallery-2.png" alt="gallery-2" class="wow animate__fadeInUp">
+            </div>
+            <div class="gallery-item" data-wow-delay="0.2s">
+                <img src="src/assets/gallery-3.png" alt="gallery-3" class="wow animate__fadeInUp">
+            </div>
+            <div class="gallery-item" data-wow-delay="0.3s">
+                <img src="src/assets/gallery-4.png" alt="gallery-4" class="wow animate__fadeInUp">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="form" id="form">
+    <div class="container from-container">
+        <div class="order-success wow animate__fadeInUp">
+            Спасибо за Ваш заказ. Мы скоро свяжемся с Вами!
+        </div>
+        <div class="block-form wow animate__fadeInDown">
+            <div class="form-header">
+                Забронируйте столик или VIP-комнату
+                прямо сейчас!
+            </div>
+            <form class="form-input" id="form-input">
+                <div class="error" id="error-name">Введите ваше имя</div>
+                <input type="text" class="input form-input-name" placeholder="Ваше имя" id="form-input-name">
+                <div class="error" id="error-phone">Введите ваш номер телефона</div>
+                <input type="text" class="input form-input-number" placeholder="Ваш телефон" id="form-input-number">
+                <button class="button button-form" type="button" id="button-form">Забронировать</button>
+            </form>
+            <div class="form-footer">*В течении 15 минут наш администратор свяжется
+                с вами, чтобы подтвердить бронь стола или комнаты.
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="maps-message" id="contacts">
+    <div class="container container-maps">
+        <div class="maps-title wow  animate__fadeInLeft">
+            Где мы находимся?
+        </div>
+        <div class="maps-message-block">
+            <div id="hookah-map"></div>
+            <div class="maps-text">
+                <div class="maps-text-address wow animate__fadeInUp" data-wow-delay="0.1s">
+                    <div class="maps-text-title">Наш адрес</div>
+                    <div class="maps-text-subtitle">Москва, ул. Верхняя Радищевская,
+                        5 (м. Таганская, кольцевая)
+                    </div>
+                </div>
+                <div class="maps-text-work wow animate__fadeInUp" data-wow-delay="0.2s">
+                    <div class="maps-text-title">
+                        Время работы
+                    </div>
+                    <div class="block-time-text">
+                        Пн-Чт с 18:00 до 00:00
+                        Пт-Сб с 20:00 до 5:00
+                    </div>
+                    <div class="maps-text-bottom">
+                        Вход 18+ и строго
+                        по предьявлению паспорта
+                    </div>
+                </div>
+                <div class="maps-text-messages wow animate__fadeInUp" data-wow-delay="0.3s">
+                    <div class="maps-text-title">Следите за нами в соц.сетях</div>
+                    <div class="maps-text-messages-items">
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                 width="26"
+                                 height="26" viewBox="0 0 26 26">
+                                <image id="instagram" width="26" height="26"
+                                       xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAABp0lEQVRIic2WwStEURTGf+Q9UZS9haQU2c1GiaQsx2p2bOZfsLKwtrVUosTOBhvFAsVC2dGs1MR6aiZqasbi09O3eGrmeaZncurU69zvft+795xzO0iKfFbStaSGsrOGOSNueqIP4AaoA6dAlWxsBFgBBoEFrFqTNO7TZenj5r7GRzzIgHxA0p6kV0nnkkYdj7gbvUCY0XVtAEXgBVgCdh2PuMPejPIR2QzwbpF7YDq+mFYo9N+eAE/2E8dCYy6AIaACzAGXcYK+FCI54BgYA96AR8cXXVWbQAHYcXzZmK1vLO6a7TYJzkmqS6pKKkoKYmuBY1Vjcm04Im4lCYWSyiaaSqi2KWPK3tNSKClHq76udaCUgCsZM+Y9LS1JKO+cHKbI46Gx+U6EJpzUjxRCH8ZOdCKUqSUJPbsJgxSCgbHPnZzoDBgG1lIIrRl71hbxH8q76Y7vB+783MSvMXDszpiC97S0n4rhAZgHasCe37Fbe8WxmjEPSURp3rqIYNLNmI+V8JVzcpR0kt8IYaJ9e0fW1T5qepD4Kxv50ujWcNLVcevvB0iJT3YeBRIlx8wBAAAAAElFTkSuQmCC"/>
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                 width="36"
+                                 height="26" viewBox="0 0 36 26">
+                                <image id="vk" width="36" height="26"
+                                       xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAaCAYAAADfcP5FAAADpklEQVRIia1Xb2iXVRR+NnW6MiOFBJNKzRWhol8yxCgxcgpqEaJbDUFQ0A+BoBCrfagIRYxtiUQSMoNI0Q+KI2JL9IOoaFFUiFv+SUH9YJobbqOFe+LM58rx8L7b+8MOXO59n/Oc+557zr3nvW8ZyWYAjyNffgPwmdMuBrARwCwAjwKoBNAN4CaASwBOAdgB4EaYsRzAuCHeY3IXJL/l0NJFchRJ49aQvDsM32SV+L4tLGD3p3l9YBivbVWvARgDoBZAmdOdAHAIQCuAHwH0CH8uY57qYd5jMsk8ryR5J2dlx4Q3O6yK5CXhnwZ+i/BtGRG6IN0Rkk2h/STdxUTeK+BgmGST8AsB/0R4a45DTQF/2aWlKuhGmCPS7SxXqParXxw2eKv6qQBedPjF+yF+UEbrqTvga9WfAdAZdKsBTNH4y+TQd8p/BYDljnwOwHmNVzj8lvrxYfJK9f84bIL2nklL4Nsp/Vhj28u/Jof6ABzWuC4YpU1f47A+ZEuKbo/TrtOBsKh9HawaADw1eNzvjeFzWa08DpB8xuEzXf5nC3szHdOcQ7Bez2NJ/iWsMXBfINkv3ecJL3fetgG4qmO9xuFWGH/XeH1ITW9OpNJeek8p+xdAY+BY8RylAtqQQO/QAIA9Gq8Jut3qLZ0TAUzT87Xwkn71tjeeBlDv7K84nu3H1zV+H0DXfU0I43SXnrccbqG/LXwfyaM5adgl/HuSJzW2Sj/JcSrcMT9OsszPER2y1ibyqYB/mFHqqwPn3QzOusBZ6/bqnPj+LIeWuMkWhJWddLrTJMuDrVX9c47zRcb87dJ9k6HLdMhC+LOM2oPOUlevSj0ha0KST6rCvx3TodahuVcWdQgi56XlYdsPmviIPhuFHLKVnZFhJ8kx/6NDdW6xW4o6ZG2+M9xe4ktfUnF8PmexrW7umqIOWdvlDJeVEIEB2Vglrs3gPOH2Ug/JGUUdGkfyDxn2kpxbgP93OPbm1LwMbpWrbWdJji7iEPT96pVhN8k3huCmGtOnVKQXWiF8LIO/3Dn+QVGHrC1yH0K7U28l+UgG77A4LXpe6NK3J2fur9wiJpayUasVoSTXVb2nOU76JLzjsO3OZnPGvONdJBsGC1cJMkN3mjnBxD6yHQBeATBS/XHpKvRrlGzO2kUsXOJeBfDs4I2yxONsbSTJDSSvhM3rJd2bUptM8vIQ/CQ3S42QlxH6PVqq1U/XL5NdPez5l8C36+5HABYpGnYXelAA/gecmEmw7Qo58QAAAABJRU5ErkJggg=="/>
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg class="end-message" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                 width="26"
+                                 height="26" viewBox="0 0 26 26">
+                                <image id="whatsapp" width="26" height="26"
+                                       xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAC5UlEQVRIia2WS4jNURzHP1wh5D2jQfIor42xGEoeKSkLj7Czs2Bh4VWawsYIsUMpZLzlHZEiDIYslHcsEAvymIVBHoWvfnxvTv+595pbfnXqnPP//c7n/s75PW4bSfxDaoDZwHhgGNAL+Ak0AY+Ba8Ax4F6pY0qBpgJ1wBivn/mwd0BboBIYBQzw96vAKoNbSoAyo4ukvfoj7yWtlTSkgF5+DJe0SVKzbbZJ6pjVyxpVSLplg32SepYAZEelpEO2vS6pWzFQZ0N+SFrkvbjaCZIGlwFcatiN1LNUYZcV8pCcpP3e+y5pXhmwJbbbngVNTq4rv7fQe/WS7tvTcmAHbT8pBd30w/dOFM9Lei2pnd8uD5vbSlCFz7yRB402eUNG8YGkhozhK0mPyvBqnc+ujnyY45ivz8R+JGWHZD0dqAIe/ivDE9nt6dygXpb0osCvOS2pyZEX6zf2slsZHsV4LulKeDS8SPm47nIzGsgBXYGnQHMZHoXcjdIVoJ4uK1k54fV84AdwGJgBrC4T9BboHa59cQgXcvuSpG+SBknq5HXIiiShY35O0swiZ+yIPIzJS0lniyjVSPrpUM8ZdtOwzZIOe/61RJ6dijSJyQXDij1mXZLlOQfDRf2VPZL6lUjqCLQGXJ3lKlwI1FbSAeuckdTH+wMlVWXyLA+r8d5Q29XFYlSRhE1Hzq0g5KOkNZL6F9BbbJ0FXm/MJ2xagpozJajQiJp428bxdnfdGnYm1/lEUne3jShBjWmtm2Wl2lYm4ThJWyTdkfTJ1/XcEVZpnXxvmpiCFnhzSplZX2wsS7otKShC8IOk9v8BstyQxmzji8VnSce92d6e1bbizdIR0XgkgbRo5dP88aRhH5IciQBZ7zAtBhjpiIy3Ctla6M9JlJCtwCLXpS/ABeCsa1QtMNbfXgJ3vN8GqHDB7evvV4CVLsYtJEANwAMffhn4mtGq/t1PYBwwAuhhUPyBfAQ0AkdL9ingF6SAjZ+xltTZAAAAAElFTkSuQmCC"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer" id="footer">
+    <div class="container footer-container">
+        <div class="footer-left">
+            <div class="block-logo logo-footer">
+                <img src="src/assets/logo.png" alt="logo">
+            </div>
+            <div class="right">
+                Все права защищены, <span class="date" id="date"></span>
+            </div>
+        </div>
+        <div class="footer-right">
+            <div class="footer-right-button">
+                <button class="button footer-button">Забронировать стол</button>
+            </div>
+            <div class="block-number">
+                <div class="block-time-phone-svg">
+                    <svg
+                            id="phone-call-svg"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            width="48px" height="48px">
+                        <image x="0px" y="0px" width="48px" height="48px"
+                               xlink:href="data:img/png;base64,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"/>
+                    </svg>
+                </div>
+                <div class="block-time-call">
+                    <div class="block-number-phone">
+                        8 900-500-10-10
+                    </div>
+                    <div class="block-number-call">Звоните нам</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="loader-block">
+    <span class="loader"></span>
+</div>
+
+<div class="popup-block">
+    <div class="popup">
+        <span class="popup-title">Ошибка</span>
+        <p class="popup-text">Возникла ошибка при оформлении заказа, позвоните нам и сделайте заказ</p>
+        <button class="button popup-button">Ок</button>
+    </div>
+</div>
+
+
+<script src="src/script/jquery.min.js"></script>
+<script src="src/script/jquery-ui.js"></script>
+<script src="src/script/jquery.mask.js"></script>
+<script src="src/script/slick.min.js"></script>
+<script src="src/script/wow.min.js"></script>
+<script src="src/script/script.js"></script>
+</body>
+</html>
