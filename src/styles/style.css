@@ -1800,7 +1800,6 @@ body {
   .products .products-items .products-item img {
     max-width: unset;
     width: 213px;
-    height: 113px;
   }
   .products .products-items .none-border {
     display: none;
