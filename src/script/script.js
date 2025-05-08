@@ -3,8 +3,10 @@ $(document).ready(function () {
         animateClass: 'animate__animated',
     }).init();
     const header = $('.header');
+    const windowScrollTop = $('#scroll-top');
     $(window).scroll(function () {
-        $(window).scrollTop() > 0 ? header.css('background', 'rgb(7, 0, 21)') : header.css('background', 'none');
+        $(window).scrollTop() > 0 ? header.css('background', 'rgba(7, 0, 21)')  : header.css('background', 'none');
+        $(window).scrollTop() > 0 ? windowScrollTop.css('opacity', '1') : windowScrollTop.css('opacity', '0');
     });
 
     $(document).on('click', '#main-button, .footer-button', function (e) {
@@ -12,7 +14,7 @@ $(document).ready(function () {
         $('.form')[0].scrollIntoView({behavior: 'smooth'});
     });
 
-    $('#scroll-top').click(()=>{
+    windowScrollTop.click(()=>{
         $('.main')[0].scrollIntoView({behavior: 'smooth'});
     });
 
