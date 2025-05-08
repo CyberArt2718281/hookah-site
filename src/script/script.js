@@ -169,7 +169,7 @@ $(document).ready(function () {
       "paragraph": "Сессия на классической чаше рассчитана на компанию до 3 гостей",
       "price": 750,
       "category": "кальяны",
-      "img": "src/assets/product-1.png"
+      "img": "src/assets/product-1.jpeg"
     },
     {
       "id": 2,
@@ -178,7 +178,7 @@ $(document).ready(function () {
       "paragraph": "Максимальная длительность курения кальяна - 90 минут.",
       "price": 1500,
       "category": "кальяны",
-      "img": "src/assets/product-2.png"
+      "img": "src/assets/product-2.jpeg"
     },
     {
       "id": 3,
@@ -187,7 +187,7 @@ $(document).ready(function () {
       "paragraph": "Один перезабив табака и добавки в колбу бесплатно.",
       "price": 2000,
       "category": "кальяны",
-      "img": "src/assets/product-3.png"
+      "img": "src/assets/product-3.jpeg"
     },
     {
       "id": 4,
