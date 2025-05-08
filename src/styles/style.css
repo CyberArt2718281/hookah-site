@@ -1578,6 +1578,9 @@ body {
   .footer .footer-container .footer-right .footer-button {
     margin-bottom: 40px;
   }
+  .staff {
+    padding: 100px 0 50px 0;
+  }
 }
 @media (max-width: 375px) {
   .next {
@@ -1739,6 +1742,7 @@ body {
   }
   .staff .staff-container .staff-top-block {
     max-width: 287px;
+    align-self: center;
   }
   .staff .staff-container .staff-top-title {
     text-align: center;

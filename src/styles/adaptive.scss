@@ -381,6 +381,11 @@
       }
     }
   }
+  .staff {
+    padding: 100px 0 50px 0;
+
+  }
+
 
 }
 
@@ -590,6 +595,7 @@
     .staff-container {
       .staff-top-block {
         max-width: 287px;
+        align-self: center;
       }
 
       .staff-top-title {
