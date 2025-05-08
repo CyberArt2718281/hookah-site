@@ -1,6 +1,0 @@
-<svg id="clock-time"
-     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25"
-     height="25" viewBox="0 0 25 25">
-    <image id="clock" width="25" height="25"
-           xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAABtUlEQVRIib2WMS8EURSFP29FotioFCqVbVcj2+t0oiEKsn9gCwmlSkf8CAlRiJLfIBqNZju1hmxhI9aRx5lkM2ZmZ1hOcvNm5t17Tm7u3PvehCQKUAfWgBVgCZgHasAAeABugWvgEujl0eSJTAO7wA4wY9I7oAu8AlNAA1i06DNwDBwCL9/YokjKmpK6+sK9pLakeoYf/t62nxzXTPulg5Yl9ST1JXUkhRzytAX79x2/nCfStMOjpFYO2ZykVa9Z+y3H94YzSjannWq/QAALyGueT8s8XfMSXJpY5AVgD7gp+t1K4MY8C+YlKd6TizeqBmUySWp0b956cB/E3/QIeP9lFgnezRd514IbLfbBxZgEElyYdyW4k++KOvaH6Jl3KXhUdMcskCDyzgePhdeSQQOvG44bhchbCw6cKilyBZwB68BJCaHIO5j0NG1UyGTLz5tet4YyTKPxyS/pXNJbwRDMspqkU/fMqd+zhmfkPY8v23ZuVxBJCx1k7Le9t12147OEosBsUccnH/et2qkokmcd8+3/ZAqXsW9TuOp5MsoKz5PE/vxkHM5orGf8v9xW/v7eBXwAQOlVaGSDXIIAAAAASUVORK5CYII="/>
-</svg>
