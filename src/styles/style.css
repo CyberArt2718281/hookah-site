@@ -11,19 +11,19 @@
 }
 @font-face {
   font-family: Montserrat-Regular;
-  src: url("../assets/font/Montserrat-Regular.ttf");
+  src: url("../font/Montserrat-Regular.ttf");
 }
 @font-face {
   font-family: Montserrat-ExtraLight;
-  src: url("../assets/font/Montserrat-ExtraLight.ttf");
+  src: url("../font/Montserrat-ExtraLight.ttf");
 }
 @font-face {
   font-family: Panton-Regular;
-  src: url("../assets/font/Panton-Trial-Regular.ttf");
+  src: url("../font/Panton-Trial-Regular.ttf");
 }
 @font-face {
   font-family: Panton-ExtraBold;
-  src: url("../assets/font/Panton-Trial-ExtraBold.ttf");
+  src: url("../font/Panton-Trial-ExtraBold.ttf");
 }
 body {
   font-family: Montserrat-Regular, sans-serif;
@@ -230,7 +230,7 @@ body {
 }
 .main .main-container .main-image .main-image-circle .main-image-discount .main-image-discount-text {
   font-size: 14px;
-  font-family: "Panton-ExtraBold", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: rgb(255, 255, 255);
   text-align: center;
   max-width: 100px;
@@ -609,7 +609,6 @@ body {
 @media (max-width: 664px) {
   .products .menu-items {
     flex-direction: column;
-    overflow: scroll;
     justify-content: center;
     align-items: center;
   }
@@ -632,7 +631,13 @@ body {
   border: 1px solid rgb(98, 36, 223);
   box-shadow: 0 0 5px #8e67da;
   display: flex;
+  align-items: center;
   justify-content: space-between;
+}
+@media (max-width: 550px) {
+  .products .products-items .products-item {
+    max-width: 360px;
+  }
 }
 .products .products-items .products-item img {
   width: 151px;
@@ -643,13 +648,19 @@ body {
   box-shadow: none;
 }
 .products .products-items .products-item .products-item-text {
-  max-width: 273px;
+  width: 273px;
 }
 .products .products-items .products-item .products-item-title {
   font-size: 20px;
   font-family: "Panton-ExtraBold", sans-serif;
   color: rgb(98, 36, 223);
   margin-bottom: 21px;
+}
+@media (max-width: 550px) {
+  .products .products-items .products-item .products-item-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
 }
 .products .products-items .products-item .products-item-subtitle-top {
   font-size: 15px;
@@ -658,12 +669,24 @@ body {
   line-height: 1.333;
   margin-bottom: 30px;
 }
+@media (max-width: 550px) {
+  .products .products-items .products-item .products-item-subtitle-top {
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+}
 .products .products-items .products-item .products-item-subtitle-bottom {
   font-size: 15px;
   font-family: "Montserrat-Regular", sans-serif;
   color: rgb(255, 255, 255);
   line-height: 1.333;
   margin-bottom: 30px;
+}
+@media (max-width: 550px) {
+  .products .products-items .products-item .products-item-subtitle-bottom {
+    font-size: 12px;
+    margin-bottom: 23px;
+  }
 }
 .products .products-items .products-item .products-item-price {
   font-size: 20px;

@@ -70,12 +70,7 @@
             <div class="group-block-header">
                 <div class="block-time block-time-header">
                     <div class="block-time-clock" >
-                        <svg id="clock-time"
-                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25"
-                             height="25" viewBox="0 0 25 25">
-                            <image id="clock" width="25" height="25"
-                                   xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAABtUlEQVRIib2WMS8EURSFP29FotioFCqVbVcj2+t0oiEKsn9gCwmlSkf8CAlRiJLfIBqNZju1hmxhI9aRx5lkM2ZmZ1hOcvNm5t17Tm7u3PvehCQKUAfWgBVgCZgHasAAeABugWvgEujl0eSJTAO7wA4wY9I7oAu8AlNAA1i06DNwDBwCL9/YokjKmpK6+sK9pLakeoYf/t62nxzXTPulg5Yl9ST1JXUkhRzytAX79x2/nCfStMOjpFYO2ZykVa9Z+y3H94YzSjannWq/QAALyGueT8s8XfMSXJpY5AVgD7gp+t1K4MY8C+YlKd6TizeqBmUySWp0b956cB/E3/QIeP9lFgnezRd514IbLfbBxZgEElyYdyW4k++KOvaH6Jl3KXhUdMcskCDyzgePhdeSQQOvG44bhchbCw6cKilyBZwB68BJCaHIO5j0NG1UyGTLz5tet4YyTKPxyS/pXNJbwRDMspqkU/fMqd+zhmfkPY8v23ZuVxBJCx1k7Le9t12147OEosBsUccnH/et2qkokmcd8+3/ZAqXsW9TuOp5MsoKz5PE/vxkHM5orGf8v9xW/v7eBXwAQOlVaGSDXIIAAAAASUVORK5CYII="/>
-                        </svg>
+                        <img src="src/assets/clock-time.svg" alt="clock-time">
                     </div>
                     <div class="block-time-text" id="text-time">
                         Пн-Чт с 18 до 00 Пт-Сб с 20 до 5
@@ -83,11 +78,7 @@
                 </div>
                 <div class="block-number">
                     <div class="block-time-phone-svg">
-                        <svg id='phone-call-svg'  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48"
-                             height="48" viewBox="0 0 48 48">
-                            <image id="phone-call" width="48" height="48"
-                                   xlink:href="data:img/png;base64,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"/>
-                        </svg>
+                        <img src="src/assets/phone-call.svg" alt="phone-call">
                     </div>
                     <div class="block-time-call">
                         <div class="block-number-phone">
