@@ -108,7 +108,7 @@ body {
 
         .block-logo-top {
           width: 20px;
-          font-size: 18px;
+          font-size: 17px;
           font-family: Panton-ExtraBold, sans-serif;
           color: $violet-second;
           font-weight: bold;
@@ -116,7 +116,7 @@ body {
         }
 
         .block-logo-bottom {
-          font-size: 13px;
+          font-size: 12px;
           font-family: Montserrat-Regular, sans-serif;
           color: $white-color;
           text-shadow: 0 0 5px $white-color;
@@ -667,12 +667,12 @@ body {
     color: $white-color;
     margin-bottom: 42px;
   }
-
   .border-bot {
     opacity: 0;
     border-bottom: 1px solid $violet-second;
     width: 100%;
     @include box-shadow();
+    transition: all 0.3s ease-in-out; // Добавляем плавный переход
   }
 
   .menu-items {
@@ -680,6 +680,19 @@ body {
     display: flex;
     list-style: none;
     margin-bottom: 49px;
+    overflow-x: auto; // Добавляем горизонтальный скролл
+    scrollbar-width: none; // Скрываем скроллбар
+    -ms-overflow-style: none; // Для IE
+    padding: 10px 0; // Добавляем отступы для скролла
+
+    &::-webkit-scrollbar {
+      display: none; // Скрываем скроллбар в WebKit
+    }
+
+    .menu-item {
+      position: relative;
+      flex-shrink: 0; // Предотвращаем сжатие элементов
+    }
 
     .menu-item-link {
       text-decoration: none;
@@ -689,14 +702,11 @@ body {
       cursor: pointer;
       border-bottom: 1px solid rgba(98, 36, 223, 0);
       transition: all .2s ease-in-out;
+      padding: 8px 0; // Добавляем отступы для лучшего взаимодействия
+      display: block;
 
       &:hover + .border-bot {
         opacity: 1;
-        transition: all 0.3s ease-in-out;
-      }
-
-      &:not(:hover) + .border-bot {
-        transition: all 0.3s ease-in-out;
       }
     }
   }
@@ -1323,13 +1333,24 @@ body {
 [class*="copyrights-pane"] {
   display: none !important;
 }
-
 .header-burger {
   display: none;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+
+  &:active {
+    transform: scale(0.9);
+  }
 }
 
 .menu-close {
   display: none;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: rotate(90deg);
+  }
 }
 
 

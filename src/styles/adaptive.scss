@@ -241,7 +241,6 @@
       }
 
       .menu {
-        display: none;
         position: fixed;
         width: 100%;
         height: 100%;
@@ -251,6 +250,12 @@
         margin: 0;
         top: 0;
         background: #000000b0;
+        display: flex;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+        transform: translateY(-20px);
+        pointer-events: none;
 
         &.open {
           display: flex;
@@ -258,6 +263,10 @@
           z-index: 9999;
           left: 0;
           right: 0;
+          opacity: 1;
+          visibility: visible;
+          transform: translateY(0);
+          pointer-events: all;
         }
 
         .menu-items {
@@ -267,6 +276,7 @@
           justify-content: center;
           align-items: center;
           z-index: 999999999999;
+          animation: fadeInUp 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
 
           .menu-item {
             margin-bottom: 30px;
@@ -289,6 +299,7 @@
           position: absolute;
           top: 20px;
           right: 15px;
+          animation: fadeIn 0.5s ease 0.3s both;
         }
       }
 
@@ -296,6 +307,25 @@
       .group-block-header {
         margin: auto;
       }
+    }
+  }
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
     }
   }
 
