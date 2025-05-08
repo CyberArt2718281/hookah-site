@@ -47,9 +47,9 @@ body {
 .block-logo .block-logo-text-title {
   font-size: 18px;
   font-family: "Panton-ExtraBold", sans-serif;
-  color: rgb(98, 36, 223);
+  color: rgb(109, 30, 219);
   max-width: 53px;
-  text-shadow: 0 0 10px rgb(98, 36, 223);
+  text-shadow: 0 0 10px rgb(109, 30, 219);
 }
 .block-logo img {
   height: 63px;
@@ -70,10 +70,10 @@ body {
 }
 @keyframes shadow-text-number {
   0% {
-    text-shadow: 0 0 10px rgb(98, 36, 223);
+    text-shadow: 0 0 10px rgb(109, 30, 219);
   }
   100% {
-    text-shadow: 0 0 0 rgb(98, 36, 223);
+    text-shadow: 0 0 0 rgb(109, 30, 219);
   }
 }
 .block-number .block-time-call {
@@ -83,8 +83,8 @@ body {
 .block-number .block-number-phone {
   font-size: 15px;
   font-family: "Montserrat-Regular", sans-serif;
-  color: rgb(98, 36, 223);
-  text-shadow: 0 0 10px rgb(98, 36, 223);
+  color: rgb(109, 30, 219);
+  text-shadow: 0 0 10px rgb(109, 30, 219);
   animation: shadow-text-number 2s infinite alternate ease-in-out;
 }
 .block-number .block-number-call {
@@ -126,9 +126,9 @@ body {
   width: 20px;
   font-size: 17px;
   font-family: Panton-ExtraBold, sans-serif;
-  color: rgb(98, 36, 223);
+  color: #6d1edb;
   font-weight: bold;
-  text-shadow: 0 0 5px rgb(98, 36, 223);
+  text-shadow: 0 0 5px rgb(109, 30, 219);
 }
 .header .header-container .block-logo .group-block-logo .block-logo-bottom {
   font-size: 12px;
@@ -321,7 +321,7 @@ body {
   font-size: 15px;
   font-family: "Montserrat-Regular", sans-serif;
   color: rgba(255, 255, 255, 0.7);
-  background-color: rgb(98, 36, 223);
+  background-color: rgb(109, 30, 219);
   padding: 17px 0 18px 0;
   width: 240px;
   border: none;
@@ -350,7 +350,7 @@ body {
   width: 510px;
   padding: 30px 30px 28px 30px;
   height: 250px;
-  border: 1px solid rgb(98, 36, 223);
+  border: 1px solid rgb(109, 30, 219);
   display: flex;
   justify-content: space-between;
   box-shadow: 0 0 5px #8e67da;
@@ -364,7 +364,7 @@ body {
 .advantages .advantages-items .advantages-item:nth-child(1) .advantages-item-text .advantages-item-text-title {
   font-size: 20px;
   font-family: Panton-ExtraBold, sans-serif;
-  color: rgb(98, 36, 223);
+  color: rgb(109, 30, 219);
   margin-bottom: 20px;
 }
 .advantages .advantages-items .advantages-item:nth-child(1) .advantages-item-text .advantages-item-text-subtitle {
@@ -377,7 +377,7 @@ body {
   width: 510px;
   padding: 30px 30px 28px 30px;
   height: 405px;
-  border: 1px solid rgb(98, 36, 223);
+  border: 1px solid rgb(109, 30, 219);
   display: flex;
   flex-direction: column-reverse;
   justify-content: space-between;
@@ -391,7 +391,7 @@ body {
 .advantages .advantages-items .advantages-item:nth-child(2) .advantages-item-text .advantages-item-text-title {
   font-size: 20px;
   font-family: Panton-ExtraBold, sans-serif;
-  color: rgb(98, 36, 223);
+  color: rgb(109, 30, 219);
   margin-bottom: 20px;
 }
 .advantages .advantages-items .advantages-item:nth-child(2) .advantages-item-text .advantages-item-text-subtitle {
@@ -402,7 +402,7 @@ body {
 }
 .advantages .advantages-items .advantages-item:nth-child(3) {
   padding: 30px 30px 28px 30px;
-  border: 1px solid rgb(98, 36, 223);
+  border: 1px solid rgb(109, 30, 219);
   height: 230px;
   width: 510px;
   display: flex;
@@ -417,7 +417,7 @@ body {
 .advantages .advantages-items .advantages-item:nth-child(3) .advantages-item-text .advantages-item-text-title {
   font-size: 20px;
   font-family: Panton-ExtraBold, sans-serif;
-  color: rgb(98, 36, 223);
+  color: rgb(109, 30, 219);
   margin-bottom: 20px;
 }
 .advantages .advantages-items .advantages-item:nth-child(3) .advantages-item-text .advantages-item-text-subtitle {
@@ -438,7 +438,7 @@ body {
 .advantages .advantages-items .advantages-item:nth-child(4) .advantages-item-text-title {
   font-size: 20px;
   font-family: Panton-ExtraBold, sans-serif;
-  color: rgb(98, 36, 223);
+  color: rgb(109, 30, 219);
   margin-bottom: 20px;
 }
 .advantages .advantages-items .advantages-item:nth-child(4) .advantages-item-text-subtitle {
@@ -537,7 +537,7 @@ body {
   margin-right: 30px;
 }
 .staff .slider .slide .slide-text {
-  border: 1px solid rgb(98, 36, 223);
+  border: 1px solid rgb(109, 30, 219);
   padding: 30px;
   text-align: left;
   margin-top: 10px;
@@ -547,7 +547,7 @@ body {
 .staff .slider .slide .slide-text .slide-text-title {
   font-size: 18px;
   font-family: "Panton-ExtraBold", sans-serif;
-  color: rgb(98, 36, 223);
+  color: rgb(109, 30, 219);
   margin-bottom: 17px;
 }
 .staff .slider .slide .slide-text .slide-text-experience {
@@ -573,12 +573,12 @@ body {
   background: transparent;
   text-decoration: none;
   outline: none;
-  border: 1px solid rgb(98, 36, 223);
+  border: 1px solid rgb(109, 30, 219);
   box-shadow: 0 0 5px #8e67da;
   cursor: pointer;
 }
 .staff .button-arrow svg {
-  fill: rgb(98, 36, 223);
+  fill: rgb(109, 30, 219);
 }
 .staff .button-arrow:active {
   background: rgba(98, 36, 223, 0.5);
@@ -598,7 +598,7 @@ body {
 }
 .products .border-bot {
   opacity: 0;
-  border-bottom: 1px solid rgb(98, 36, 223);
+  border-bottom: 1px solid rgb(109, 30, 219);
   width: 100%;
   box-shadow: 0 0 5px #8e67da;
   transition: all 0.3s ease-in-out;
@@ -661,7 +661,7 @@ body {
   align-self: center;
   justify-self: center;
   max-width: 460px;
-  border: 1px solid rgb(98, 36, 223);
+  border: 1px solid rgb(109, 30, 219);
   box-shadow: 0 0 5px #8e67da;
   display: flex;
   align-items: center;
@@ -686,7 +686,7 @@ body {
 .products .products-items .products-item .products-item-title {
   font-size: 20px;
   font-family: "Panton-ExtraBold", sans-serif;
-  color: rgb(98, 36, 223);
+  color: rgb(109, 30, 219);
   margin-bottom: 21px;
 }
 @media (max-width: 550px) {
@@ -852,7 +852,7 @@ body {
   width: 350px;
   padding: 13px 0 15px 17px;
   background: transparent;
-  border: 1px solid rgb(98, 36, 223);
+  border: 1px solid rgb(109, 30, 219);
   margin-bottom: 20px;
   color: rgba(255, 255, 255, 0.7);
   outline: none;
@@ -937,7 +937,7 @@ body {
 .maps-message .maps-text .maps-text-title {
   font-size: 20px;
   font-family: "Panton-ExtraBold", sans-serif;
-  color: rgb(98, 36, 223);
+  color: rgb(109, 30, 219);
   margin-bottom: 20px;
 }
 .maps-message .maps-text .maps-text-subtitle {
@@ -1047,7 +1047,7 @@ body {
   border-radius: 50%;
   width: 60px;
   height: 60px;
-  color: rgb(98, 36, 223);
+  color: rgb(109, 30, 219);
 }
 
 .loader:before,
@@ -1121,7 +1121,7 @@ body {
   height: 100%;
   font-size: 24px;
   font-family: "Panton-ExtraBold", sans-serif;
-  color: rgb(98, 36, 223);
+  color: rgb(109, 30, 219);
   transition: opacity 0.5s ease;
   text-align: center;
 }
@@ -1564,7 +1564,7 @@ body {
     display: block;
     height: 40px;
     width: 40px;
-    fill: rgb(98, 36, 223);
+    fill: rgb(109, 30, 219);
     position: absolute;
     top: 20px;
     right: 15px;
@@ -2330,7 +2330,7 @@ body {
 }
 .pagination-button {
   position: relative;
-  background-color: rgb(98, 36, 223);
+  background-color: rgb(109, 30, 219);
   color: rgba(255, 255, 255, 0.7);
   border: none;
   border-radius: 6px;
@@ -2356,7 +2356,7 @@ body {
   transition: opacity 0.2s ease;
 }
 .pagination-button:hover:not(:disabled), .pagination-button:focus:not(:disabled) {
-  background-color: rgb(123.5203187251, 71.5984063745, 228.2015936255);
+  background-color: rgb(131.1927710843, 61.3301204819, 228.4698795181);
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
@@ -2368,13 +2368,13 @@ body {
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
 }
 .pagination-button:disabled {
-  background-color: rgba(98, 36, 223, 0.3);
+  background-color: rgba(109, 30, 219, 0.3);
   color: rgba(255, 255, 255, 0.5);
   cursor: not-allowed;
   box-shadow: none;
 }
 .pagination-button--active {
-  background-color: rgb(136.2804780876, 89.3976095618, 230.8023904382);
+  background-color: rgb(142.6626506024, 79.2722891566, 230.9277108434);
   box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3);
 }
 .pagination-info {
@@ -2425,7 +2425,7 @@ body {
   width: 40px;
   height: 40px;
   opacity: 1;
-  fill: rgb(98, 36, 223);
+  fill: rgb(109, 30, 219);
   transition: all 0.1s ease-in-out;
 }
 .scroll-top:hover {
