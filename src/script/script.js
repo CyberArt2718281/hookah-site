@@ -202,6 +202,7 @@ $(document).ready(function () {
       "subtitle": "Добавки в колбу на выбор:",
       "paragraph": "-молоко -сок -сиропы -ликер",
       "price": 200,
+      "img": "src/assets/product-8.jpeg",
       "category": "кальяны"
     },
     {
@@ -555,20 +556,6 @@ $(document).ready(function () {
 
         let htmlContent = '';
         productsToShow.forEach((item) => {
-            if (item['title'].toLowerCase() === 'дополнительно') {
-                htmlContent += `
-                <div class="products-item none-border wow animate__fadeInUp">
-                    <div class="products-item-text">
-                        <div class="products-item-title">${item['title']}</div>
-                        <div class="products-item-subtitle-top-text">${item['subtitle']}</div>
-                        <div class="products-item-subtitle-bottom-text">
-                            ${item['paragraph'].replace(/ -/g, '<br>-')}
-                        </div>
-                        <div class="products-item-price">${item['price']} руб.</div>
-                    </div>
-                </div>
-            `;
-            } else {
                 htmlContent += `
                 <div class="products-item wow animate__fadeInUp">
                     <div class="products-item-text">
@@ -580,7 +567,7 @@ $(document).ready(function () {
                     ${item['img'] ? `<img src="${item['img']}" alt="${item['title']}">` : ''}
                 </div>
             `;
-            }
+
         });
 
 

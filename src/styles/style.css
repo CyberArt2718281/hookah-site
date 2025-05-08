@@ -1202,9 +1202,6 @@ body {
   cursor: pointer;
   transition: transform 0.3s ease;
 }
-.header-burger:active {
-  transform: scale(0.9);
-}
 
 .menu-close {
   display: none;
@@ -1548,7 +1545,6 @@ body {
     opacity: 0;
     visibility: hidden;
     transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-    transform: translateY(-20px);
     pointer-events: none;
   }
   .header .header-container .menu.open {
@@ -1559,7 +1555,6 @@ body {
     right: 0;
     opacity: 1;
     visibility: visible;
-    transform: translateY(0);
     pointer-events: all;
   }
   .header .header-container .menu .menu-items {
