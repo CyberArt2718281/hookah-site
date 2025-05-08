@@ -126,7 +126,7 @@ body {
   width: 20px;
   font-size: 17px;
   font-family: Panton-ExtraBold, sans-serif;
-  color: #6d1edb;
+  color: rgb(109, 30, 219);
   font-weight: bold;
   text-shadow: 0 0 5px rgb(109, 30, 219);
 }
@@ -1012,8 +1012,29 @@ body {
   display: flex;
   justify-content: space-between;
 }
-.footer .footer-container .logo-footer {
+.footer .footer-container .group-block-logo-footer {
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
   margin-bottom: 35px;
+}
+.footer .footer-container .group-block-logo-footer img {
+  width: 43px;
+  height: 61px;
+}
+.footer .footer-container .group-block-logo-footer .block-logo-top {
+  width: 20px;
+  font-size: 17px;
+  font-family: Panton-ExtraBold, sans-serif;
+  color: rgb(109, 30, 219);
+  font-weight: bold;
+  text-shadow: 0 0 5px rgb(109, 30, 219);
+}
+.footer .footer-container .group-block-logo-footer .block-logo-bottom {
+  font-size: 12px;
+  font-family: Montserrat-Regular, sans-serif;
+  color: rgba(255, 255, 255, 0.7);
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
 }
 .footer .footer-container .right {
   font-size: 13px;

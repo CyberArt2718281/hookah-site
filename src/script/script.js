@@ -536,9 +536,9 @@ $(document).ready(function () {
     const hookah = $('#hookah');
     const drink = $('#drink');
     const food = $('#food');
-
+    const windowInnerScreen = $(window).innerWidth();
     let currentPage = 1;
-    const itemsPerPage = 4;
+    let itemsPerPage = windowInnerScreen > 768 ? 4 : windowInnerScreen >450 && windowInnerScreen <768 ? 3: 2;
     let filteredProducts = []; // Делаем глобальной
 
     function renderProducts(category) {

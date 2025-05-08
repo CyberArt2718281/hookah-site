@@ -110,7 +110,7 @@ body {
           width: 20px;
           font-size: 17px;
           font-family: Panton-ExtraBold, sans-serif;
-          color: #6D1EDBFF;
+          color: $violet-second;
           font-weight: bold;
           text-shadow: 0 0 5px $violet-second;
         }
@@ -1154,8 +1154,31 @@ body {
     display: flex;
     justify-content: space-between;
 
-    .logo-footer {
+    .group-block-logo-footer {
+      text-decoration: none;
+      display: flex;
+      flex-direction: row;
       margin-bottom: 35px;
+      img {
+        width: 43px;
+        height: 61px;
+      }
+
+      .block-logo-top {
+        width: 20px;
+        font-size: 17px;
+        font-family: Panton-ExtraBold, sans-serif;
+        color: $violet-second;
+        font-weight: bold;
+        text-shadow: 0 0 5px $violet-second;
+      }
+
+      .block-logo-bottom {
+        font-size: 12px;
+        font-family: Montserrat-Regular, sans-serif;
+        color: $white-color;
+        text-shadow: 0 0 5px $white-color;
+      }
     }
 
     .right {
