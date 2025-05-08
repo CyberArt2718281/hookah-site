@@ -203,7 +203,7 @@ $(document).ready(function () {
       "subtitle": "Ассорти из сыров с орехами и виноградом",
       "paragraph": "Идеально для компании из 2-4 человек.",
       "price": 1200,
-      "category": "закуски",
+      "category": "блюда",
       "img": "src/assets/food-1.jpeg"
     },
     {
@@ -212,7 +212,7 @@ $(document).ready(function () {
       "subtitle": "Разнообразие мясных деликатесов",
       "paragraph": "Подается с горчицей и хлебом.",
       "price": 1500,
-      "category": "закуски",
+      "category": "блюда",
       "img": "src/assets/food-2.jpeg"
     },
     {
@@ -221,7 +221,7 @@ $(document).ready(function () {
       "subtitle": "Ассорти из оливок и маслин",
       "paragraph": "Подается с оливковым маслом и специями.",
       "price": 800,
-      "category": "закуски",
+      "category": "блюда",
       "img": "src/assets/food-3.jpeg"
     },
     {
@@ -230,7 +230,7 @@ $(document).ready(function () {
       "subtitle": "Хрустящий картофель фри",
       "paragraph": "Подается с соусами на выбор.",
       "price": 600,
-      "category": "закуски",
+      "category": "блюда",
       "img": "src/assets/food-4.jpeg"
     },
     {
@@ -304,6 +304,222 @@ $(document).ready(function () {
       "price": 500,
       "category": "барная карта",
       "img": "src/assets/bar-4.jpeg"
+    },
+    {
+      "id": 17,
+      "title": "Коктейль Негрони",
+      "subtitle": "Классический итальянский коктейль",
+      "paragraph": "С джином, кампари и сладким вермутом.",
+      "price": 1300,
+      "category": "барная карта",
+      "img": "src/assets/bar-5.jpeg"
+    },
+    {
+      "id": 18,
+      "title": "Салат Цезарь",
+      "subtitle": "Классический салат с курицей",
+      "paragraph": "С хрустящими крутонами и соусом Цезарь.",
+      "price": 900,
+      "category": "блюда",
+      "img": "src/assets/food-5.jpeg"
+    },
+    {
+      "id": 19,
+      "title": "Фруктовая тарелка",
+      "subtitle": "Ассорти из свежих фруктов",
+      "paragraph": "Идеально для легкого перекуса.",
+      "price": 1100,
+      "category": "блюда",
+      "img": "src/assets/food-6.jpeg"
+    },
+    {
+      "id": 20,
+      "title": "Клубничный лимонад",
+      "subtitle": "Освежающий напиток с клубникой",
+      "paragraph": "С мятой и льдом.",
+      "price": 450,
+      "category": "чай и б/а коктейли",
+      "img": "src/assets/drink-5.jpeg"
+    },
+        {
+    "id": 21,
+    "title": "Шоколадный фондан",
+    "subtitle": "Десерт с жидким шоколадом внутри",
+    "paragraph": "Подается с шариком ванильного мороженого.",
+    "price": 600,
+    "category": "блюда",
+    "img": "src/assets/food-7.jpeg"
+    },
+    {
+    "id": 22,
+    "title": "Тирамису",
+    "subtitle": "Классический итальянский десерт",
+    "paragraph": "С кремом маскарпоне и кофе.",
+    "price": 700,
+    "category": "блюда",
+    "img": "src/assets/food-8.jpeg"
+    },
+    {
+    "id": 23,
+    "title": "Чизкейк Нью-Йорк",
+    "subtitle": "Классический чизкейк",
+    "paragraph": "Подается с ягодным соусом.",
+    "price": 750,
+    "category": "блюда",
+    "img": "src/assets/food-10.jpeg"
+    },
+    {
+    "id": 24,
+    "title": "Фруктовый салат",
+    "subtitle": "Ассорти из свежих фруктов",
+    "paragraph": "С йогуртовой заправкой.",
+    "price": 500,
+    "category": "блюда",
+    "img": "src/assets/food-9.jpeg"
+    },
+    {
+    "id": 25,
+    "title": "Капучино",
+    "subtitle": "Кофе с молочной пенкой",
+    "paragraph": "Подается с сахаром или без.",
+    "price": 300,
+    "category": "чай и б/а коктейли",
+    "img": "src/assets/drink-6.jpeg"
+    },
+    {
+    "id": 26,
+    "title": "Эспрессо",
+    "subtitle": "Крепкий черный кофе",
+    "paragraph": "Подается в маленькой чашке.",
+    "price": 250,
+    "category": "чай и б/а коктейли",
+    "img": "src/assets/drink-7.jpeg"
+    },
+    {
+    "id": 27,
+    "title": "Латте",
+    "subtitle": "Кофе с молоком",
+    "paragraph": "Подается с сиропом на выбор.",
+    "price": 350,
+    "category": "чай и б/а коктейли",
+    "img": "src/assets/drink-8.jpeg"
+    },
+    {
+    "id": 28,
+    "title": "Кальян на молоке",
+    "subtitle": "Табак на выбор, молоко в колбе",
+    "paragraph": "Сессия на молочной основе для мягкого вкуса.",
+    "price": 1000,
+    "category": "кальяны",
+    "img": "src/assets/product-4.jpeg"
+    },
+    {
+    "id": 29,
+    "title": "Кальян на соке",
+    "subtitle": "Табак на выбор, сок в колбе",
+    "paragraph": "Сессия с добавлением фруктового сока для яркого вкуса.",
+    "price": 1200,
+    "category": "кальяны",
+    "img": "src/assets/product-5.jpeg"
+    },
+    {
+    "id": 30,
+    "title": "Кальян на вине",
+    "subtitle": "Табак на выбор, вино в колбе",
+    "paragraph": "Изысканный вкус с добавлением красного или белого вина.",
+    "price": 2000,
+    "category": "кальяны",
+    "img": "src/assets/product-6.jpeg"
+    },
+    {
+    "id": 31,
+    "title": "Кальян на шампанском",
+    "subtitle": "Табак на выбор, шампанское в колбе",
+    "paragraph": "Легкий и праздничный вкус для особых случаев.",
+    "price": 2500,
+    "category": "кальяны",
+    "img": "src/assets/product-7.jpeg"
+    },
+    {
+    "id": 32,
+    "title": "Джин",
+    "subtitle": "Классический джин",
+    "paragraph": "Подается с тоником и лаймом.",
+    "price": 1200,
+    "category": "барная карта",
+    "img": "src/assets/bar-6.jpeg"
+    },
+    {
+    "id": 33,
+    "title": "Ром",
+    "subtitle": "Классический темный ром",
+    "paragraph": "Подается с колой или льдом.",
+    "price": 1300,
+    "category": "барная карта",
+    "img": "src/assets/bar-7.jpeg"
+    },
+    {
+    "id": 34,
+    "title": "Текила",
+    "subtitle": "Классическая текила",
+    "paragraph": "Подается с солью и лаймом.",
+    "price": 1400,
+    "category": "барная карта",
+    "img": "src/assets/bar-8.jpeg"
+    },
+    {
+    "id": 35,
+    "title": "Коктейль Пина Колада",
+    "subtitle": "Коктейль на основе рома",
+    "paragraph": "С ананасовым соком и кокосовым молоком.",
+    "price": 1100,
+    "category": "барная карта",
+    "img": "src/assets/bar-9.jpeg"
+    },
+    {
+    "id": 36,
+    "title": "Коктейль Космополитен",
+    "subtitle": "Коктейль на основе водки",
+    "paragraph": "С клюквенным соком и лаймом.",
+    "price": 1000,
+    "category": "барная карта",
+    "img": "src/assets/bar-10.jpeg"
+    },
+    {
+      "id": 37,
+      "title": "Коктейль Манхэттен",
+      "subtitle": "Классический виски-коктейль",
+      "paragraph": "С сладким вермутом и биттерами.",
+      "price": 1400,
+      "category": "барная карта",
+      "img": "src/assets/bar-11.jpeg"
+    },
+    {
+      "id": 38,
+      "title": "Брускетта с томатами",
+      "subtitle": "Итальянская закуска на гриле",
+      "paragraph": "С чесноком, базиликом и оливковым маслом.",
+      "price": 650,
+      "category": "блюда",
+      "img": "src/assets/food-11.jpeg"
+    },
+    {
+      "id": 39,
+      "title": "Белое вино",
+      "subtitle": "Охлажденное белое вино",
+      "paragraph": "Подается бокалом (150 мл) или бутылкой.",
+      "price": 900,
+      "category": "барная карта",
+      "img": "src/assets/bar-12.jpeg"
+    },
+    {
+      "id": 40,
+      "title": "Креветки в чесночном соусе",
+      "subtitle": "Тигровые креветки на гриле",
+      "paragraph": "Подаются с лимоном и зеленью.",
+      "price": 1800,
+      "category": "блюда",
+      "img": "src/assets/food-12.jpeg"
     }
   ]
 }
@@ -314,80 +530,126 @@ $(document).ready(function () {
     const drink = $('#drink');
     const food = $('#food');
 
+    let currentPage = 1;
+    const itemsPerPage = 4;
+    let filteredProducts = []; // Делаем глобальной
+
     function renderProducts(category) {
-        let htmlContent = '';
-        json.data.forEach((item) => {
-            if (item['category'] === category) {
-                if (item['title'].toLowerCase() === 'дополнительно') {
-                    htmlContent += `
-                                <div class="products-item none-border wow animate__fadeInUp">
-                                    <div class="products-item-text">
-                                        <div class="products-item-title">${item['title']}</div>
-                                        <div class="products-item-subtitle-top-text">${item['subtitle']}</div>
-                                        <div class="products-item-subtitle-bottom-text">
-                                            ${item['paragraph'].replace(/ -/g, '<br>-')}
-                                        </div>
-                                        <div class="products-item-price">${item['price']} руб.</div>
-                                    </div>
-                                </div>
-                            `;
-                } else {
-                    htmlContent += `
-                                <div class="products-item wow animate__fadeInUp">
-                                    <div class="products-item-text">
-                                        <div class="products-item-title">${item['title']}</div>
-                                        <div class="products-item-subtitle-top">${item['subtitle']}</div>
-                                        <div class="products-item-subtitle-bottom">${item['paragraph']}</div>
-                                        <div class="products-item-price">${item['price']} руб.</div>
-                                    </div>
-                                    ${item['img'] ? `<img src="${item['img']}" alt="${item['title']}">` : ''}
-                                </div>
-                            `;
-                }
-            }
-        });
-        $('.products-items').html(htmlContent);
+        filteredProducts = json.data.filter((item) => item['category'] === category);
+        currentPage = 1; // Сбрасываем на первую страницу
+        updatePagination();
     }
 
-    hookah.click(function () {
-        // Удаляем класс active у всех кнопок и скрываем их border-bot
+    function updatePagination() {
+        const totalPages = Math.ceil(filteredProducts.length / itemsPerPage);
+        const start = (currentPage - 1) * itemsPerPage;
+        const end = start + itemsPerPage;
+        const productsToShow = filteredProducts.slice(start, end);
+
+        let htmlContent = '';
+        productsToShow.forEach((item) => {
+            if (item['title'].toLowerCase() === 'дополнительно') {
+                htmlContent += `
+                <div class="products-item none-border wow animate__fadeInUp">
+                    <div class="products-item-text">
+                        <div class="products-item-title">${item['title']}</div>
+                        <div class="products-item-subtitle-top-text">${item['subtitle']}</div>
+                        <div class="products-item-subtitle-bottom-text">
+                            ${item['paragraph'].replace(/ -/g, '<br>-')}
+                        </div>
+                        <div class="products-item-price">${item['price']} руб.</div>
+                    </div>
+                </div>
+            `;
+            } else {
+                htmlContent += `
+                <div class="products-item wow animate__fadeInUp">
+                    <div class="products-item-text">
+                        <div class="products-item-title">${item['title']}</div>
+                        <div class="products-item-subtitle-top">${item['subtitle']}</div>
+                        <div class="products-item-subtitle-bottom">${item['paragraph']}</div>
+                        <div class="products-item-price">${item['price']} руб.</div>
+                    </div>
+                    ${item['img'] ? `<img src="${item['img']}" alt="${item['title']}">` : ''}
+                </div>
+            `;
+            }
+        });
+
+
+        $('.products-items').html(htmlContent);
+        $('#prev-page').prop('disabled', currentPage === 1);
+        $('#next-page').prop('disabled', currentPage === totalPages || totalPages === 0);
+        $('#pagination-info').text(`${currentPage} / ${totalPages}`);
+    }
+    function setActiveCategory(category) {
+        localStorage.setItem('activeCategory', category);
+        renderProducts(category);
+
+        // Удаляем активный класс у всех кнопок
         $('.menu-item-link').removeClass('active');
         $('.border-bot').css('opacity', '0');
 
-        // Добавляем класс active к текущей кнопке и показываем её border-bot
-        $(this).addClass('active');
-        $(this).next('.border-bot').css('opacity', '1');
-
-        renderProducts('кальяны');
+        // Находим нужную кнопку по ID и добавляем активный класс
+        const categoryId = getCategoryId(category);
+        $(`#${categoryId}`).addClass('active');
+        $(`#${categoryId}`).next('.border-bot').css('opacity', '1');
+    }
+    const savedCategory = localStorage.getItem('activeCategory') || 'кальяны';
+    setActiveCategory(savedCategory);
+// Инициализация обработчиков один раз при загрузке
+    $('#prev-page').on('click', function() {
+        if (currentPage > 1) {
+            currentPage--;
+            updatePagination();
+        }
     });
 
-    food.click(function () {
+    $('#next-page').on('click', function() {
+        const totalPages = Math.ceil(filteredProducts.length / itemsPerPage);
+        if (currentPage < totalPages) {
+            currentPage++;
+            updatePagination();
+        }
+    });
+
+    function setActiveCategory(category) {
+        localStorage.setItem('activeCategory', category);
+        renderProducts(category); // Теперь будет работать правильно
+    }
+
+// Обработчики кликов для категорий
+    hookah.click(function() {
         $('.menu-item-link').removeClass('active');
         $('.border-bot').css('opacity', '0');
         $(this).addClass('active');
         $(this).next('.border-bot').css('opacity', '1');
-        renderProducts('закуски');
+        setActiveCategory('кальяны');
     });
 
-    drink.click(function () {
+    food.click(function() {
         $('.menu-item-link').removeClass('active');
         $('.border-bot').css('opacity', '0');
         $(this).addClass('active');
         $(this).next('.border-bot').css('opacity', '1');
-        renderProducts('чай и б/а коктейли');
+        setActiveCategory('блюда');
     });
 
-    bar.click(function () {
+    drink.click(function() {
         $('.menu-item-link').removeClass('active');
         $('.border-bot').css('opacity', '0');
         $(this).addClass('active');
         $(this).next('.border-bot').css('opacity', '1');
-        renderProducts('барная карта');
+        setActiveCategory('чай и б/а коктейли');
     });
 
-// Инициализация - делаем первую вкладку активной при загрузке
-    hookah.addClass('active');
-    hookah.next('.border-bot').css('opacity', '1');
+    bar.click(function() {
+        $('.menu-item-link').removeClass('active');
+        $('.border-bot').css('opacity', '0');
+        $(this).addClass('active');
+        $(this).next('.border-bot').css('opacity', '1');
+        setActiveCategory('барная карта');
+    });
 
     $('#date').text(`${new Date().getFullYear()}`)
     let center = [55.7422267565145, 37.65525091393979];
@@ -458,7 +720,7 @@ $(document).ready(function () {
             }
             mainContainer.html(`
             <div class="main-text-title">С нами вы почувствуете дымный вкус жизни!</div>
-            
+
             <div class="main-image wow animate__backInRight">
                 <img src="src/assets/hookah.png" alt="кальян" class="main-kalyan">
                 <div class="main-image-circle">
@@ -468,12 +730,12 @@ $(document).ready(function () {
                 </div>
                 <img src="src/assets/main-sparks.png" alt="уголь" class="main-ygol">
             </div>
-            
+
             <div class="main-text-subtitle">Только качественный табак и лучшее обслуживание. Мы создаем тренды в
                 кальянных тусовках и у нас
                 каждый сможет почувствовать себя важным
                 гостем и неотъемлемой частью заведения.</div>
-            
+
             <button class="button main-button"  id="main-button">
                 Забронировать стол
             </button>
@@ -512,7 +774,7 @@ $(document).ready(function () {
                 </div>
                 <img src="src/assets/main-sparks.png" alt="уголь" class="main-ygol">
             </div>
-            
+
         `);
         }
     }
