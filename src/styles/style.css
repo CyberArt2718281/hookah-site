@@ -1897,9 +1897,6 @@ body {
     max-width: unset;
     width: 213px;
   }
-  .products .products-items .none-border {
-    display: none;
-  }
   .promotions {
     padding: 50px 0 50px 0;
   }
@@ -2226,9 +2223,6 @@ body {
     max-width: unset;
     width: 213px;
     height: 220px;
-  }
-  .products .products-items .none-border {
-    display: none;
   }
   .promotions {
     padding: 50px 0 50px 0;
