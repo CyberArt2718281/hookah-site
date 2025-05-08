@@ -11,6 +11,11 @@ $(document).ready(function () {
         e.preventDefault();
         $('.form')[0].scrollIntoView({behavior: 'smooth'});
     });
+
+    $('#scroll-top').click(()=>{
+        $('.main')[0].scrollIntoView({behavior: 'smooth'});
+    });
+
     const promotionsSlider = $('#promotions-slider');
     const gallerySlider = $('#gallery-slider');
     const staffSlider = $('.slider');

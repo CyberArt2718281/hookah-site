@@ -2264,7 +2264,6 @@ body {
   font-size: 14px;
   font-family: "Montserrat-Regular", sans-serif;
   cursor: pointer;
-  border-radius: 5px;
   transition: background-color 0.3s ease;
 }
 .pagination .pagination-button:hover:not(:disabled) {
@@ -2278,6 +2277,31 @@ body {
   font-size: 16px;
   font-family: "Montserrat-Regular", sans-serif;
   color: rgb(255, 255, 255);
+}
+
+.scroll-top {
+  position: fixed;
+  z-index: 99999999;
+  top: 800px;
+  right: 20px;
+  background: rgba(7, 0, 21, 0.8);
+  padding: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+.scroll-top svg {
+  width: 40px;
+  height: 40px;
+  opacity: 1;
+  fill: rgb(98, 36, 223);
+  transition: all 0.1s ease-in-out;
+}
+.scroll-top:hover {
+  background: rgb(7, 0, 21);
+}
+.scroll-top:hover svg {
+  fill: #8e67da;
 }
 
 /*# sourceMappingURL=style.css.map */
