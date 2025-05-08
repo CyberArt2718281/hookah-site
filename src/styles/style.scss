@@ -1496,33 +1496,99 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 40px;
-  gap: 10px;
+  margin-top: 2.5rem;
+  gap: 0.75rem;
+  flex-wrap: wrap;
 
-  .pagination-button {
+  &-button {
+    position: relative;
     background-color: $violet-second;
     color: $white-color;
     border: none;
-    padding: 10px 20px;
-    font-size: 14px;
-    font-family: "Montserrat-Regular", sans-serif;
+    border-radius: 6px;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.875rem;
+    font-family: "Montserrat-SemiBold", sans-serif;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    min-width: 3rem;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 
-    &:hover:not(:disabled) {
-      background-color: lighten($violet-second, 10%);
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+      opacity: 0;
+      transition: opacity 0.2s ease;
+    }
+
+    &:hover:not(:disabled),
+    &:focus:not(:disabled) {
+      background-color: lighten($violet-second, 8%);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+
+      &::after {
+        opacity: 1;
+      }
+    }
+
+    &:active:not(:disabled) {
+      transform: translateY(0);
+      box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
     }
 
     &:disabled {
-      background-color: #ccc;
+      background-color: rgba($violet-second, 0.3);
+      color: rgba($white-color, 0.5);
       cursor: not-allowed;
+      box-shadow: none;
+    }
+
+    &--active {
+      background-color: lighten($violet-second, 12%);
+      box-shadow: 0 0 0 2px rgba($white-color, 0.3);
     }
   }
 
-  .pagination-info {
-    font-size: 16px;
-    font-family: "Montserrat-Regular", sans-serif;
-    color: $white-color;
+  &-info {
+    font-size: 0.9375rem;
+    font-family: "Montserrat-Medium", sans-serif;
+    color: rgba($white-color, 0.9);
+    margin: 0 1rem;
+    white-space: nowrap;
+  }
+
+  &-ellipsis {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba($white-color, 0.7);
+    width: 3rem;
+    height: 3rem;
+    user-select: none;
+  }
+
+  @media (max-width: 576px) {
+    gap: 0.5rem;
+    margin-top: 2rem;
+
+    &-button {
+      padding: 0.65rem 1rem;
+      min-width: 2.5rem;
+      font-size: 0.8125rem;
+    }
+
+    &-info {
+      font-size: 0.875rem;
+      margin: 0 0.5rem;
+    }
   }
 }
 

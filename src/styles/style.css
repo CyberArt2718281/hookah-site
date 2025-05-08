@@ -2275,30 +2275,89 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 40px;
-  gap: 10px;
+  margin-top: 2.5rem;
+  gap: 0.75rem;
+  flex-wrap: wrap;
 }
-.pagination .pagination-button {
+.pagination-button {
+  position: relative;
   background-color: rgb(98, 36, 223);
   color: rgba(255, 255, 255, 0.7);
   border: none;
-  padding: 10px 20px;
-  font-size: 14px;
-  font-family: "Montserrat-Regular", sans-serif;
+  border-radius: 6px;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.875rem;
+  font-family: "Montserrat-SemiBold", sans-serif;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  min-width: 3rem;
+  text-align: center;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-.pagination .pagination-button:hover:not(:disabled) {
-  background-color: rgb(129.9003984064, 80.4980079681, 229.5019920319);
+.pagination-button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  opacity: 0;
+  transition: opacity 0.2s ease;
 }
-.pagination .pagination-button:disabled {
-  background-color: #ccc;
+.pagination-button:hover:not(:disabled), .pagination-button:focus:not(:disabled) {
+  background-color: rgb(123.5203187251, 71.5984063745, 228.2015936255);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+.pagination-button:hover:not(:disabled)::after, .pagination-button:focus:not(:disabled)::after {
+  opacity: 1;
+}
+.pagination-button:active:not(:disabled) {
+  transform: translateY(0);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+.pagination-button:disabled {
+  background-color: rgba(98, 36, 223, 0.3);
+  color: rgba(255, 255, 255, 0.5);
   cursor: not-allowed;
+  box-shadow: none;
 }
-.pagination .pagination-info {
-  font-size: 16px;
-  font-family: "Montserrat-Regular", sans-serif;
+.pagination-button--active {
+  background-color: rgb(136.2804780876, 89.3976095618, 230.8023904382);
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3);
+}
+.pagination-info {
+  font-size: 0.9375rem;
+  font-family: "Montserrat-Medium", sans-serif;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0 1rem;
+  white-space: nowrap;
+}
+.pagination-ellipsis {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: rgba(255, 255, 255, 0.7);
+  width: 3rem;
+  height: 3rem;
+  user-select: none;
+}
+@media (max-width: 576px) {
+  .pagination {
+    gap: 0.5rem;
+    margin-top: 2rem;
+  }
+  .pagination-button {
+    padding: 0.65rem 1rem;
+    min-width: 2.5rem;
+    font-size: 0.8125rem;
+  }
+  .pagination-info {
+    font-size: 0.875rem;
+    margin: 0 0.5rem;
+  }
 }
 
 .scroll-top {
