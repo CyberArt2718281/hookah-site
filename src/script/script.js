@@ -659,13 +659,13 @@ $(document).ready(function () {
             zoom: 18,
             type: 'yandex#map'
         });
-        // map.controls.remove('geolocationControl'); // удаляем геолокацию
-        // map.controls.remove('searchControl'); // удаляем поиск
-        // map.controls.remove('trafficControl'); // удаляем контроль трафика
-        // map.controls.remove('typeSelector'); // удаляем тип
-        // map.controls.remove('fullscreenControl'); // удаляем кнопку перехода в полноэкранный режим
-        // map.controls.remove('zoomControl'); // удаляем контрол зуммирования
-        // map.controls.remove('rulerControl');
+        map.controls.remove('geolocationControl'); // удаляем геолокацию
+        map.controls.remove('searchControl'); // удаляем поиск
+        map.controls.remove('trafficControl'); // удаляем контроль трафика
+        map.controls.remove('typeSelector'); // удаляем тип
+        map.controls.remove('fullscreenControl'); // удаляем кнопку перехода в полноэкранный режим
+        map.controls.remove('zoomControl'); // удаляем контрол зуммирования
+        map.controls.remove('rulerControl');
         const svgIcon = `
     <svg
  xmlns="http://www.w3.org/2000/svg"
