@@ -693,10 +693,12 @@ $(document).ready(function () {
 
     $('#burger').click(function () {
         $('#menu').addClass('open');
+        $('.header-burger').css('display','none');
     });
 
     $('#menu *').click(function () {
         $('#menu').removeClass('open');
+        $('.header-burger').css('display','block');
     });
 
     function updateLayout() {

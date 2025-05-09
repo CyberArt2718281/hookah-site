@@ -1366,10 +1366,6 @@ body {
   display: none;
   cursor: pointer;
   transition: transform 0.3s ease;
-
-  &:hover {
-    transform: rotate(90deg);
-  }
 }
 
 
