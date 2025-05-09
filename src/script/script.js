@@ -74,7 +74,12 @@ $(document).ready(function () {
     });
 
     const numberPhone = $('#form-input-number');
-    numberPhone.mask('+7-(000)-000-00-00');
+    Inputmask({
+        mask: "+7-(999)-999-99-99",
+        showMaskOnHover: false,
+        showMaskOnFocus: true,
+        clearIncomplete: true
+    }).mask(numberPhone);
 
     const formName = $('#form-input-name');
     const buttonForm = $('#button-form');
