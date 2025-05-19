@@ -377,7 +377,7 @@ body {
       @include box-shadow();
 
       img {
-        max-width: 196px;
+        width: 196px;
       }
 
       .advantages-item-text {
@@ -411,6 +411,10 @@ body {
       @include box-shadow();
       grid-row: 1/4;
       grid-column: 2/4;
+      img {
+        max-width: 100%;
+        height: 194px;
+      }
 
       .advantages-item-text {
         max-width: 100%;
@@ -441,7 +445,9 @@ body {
       @include box-shadow();
       grid-row: 2/3;
       grid-column: 1/3;
-
+      img {
+        width:170px;
+      }
       .advantages-item-text {
         max-width: 100%;
 
@@ -880,7 +886,15 @@ body {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 350px));
       gap: 30px;
-
+      .promotions-item{
+        img{
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        img:hover{
+          transform: scale(1.03);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+      }
       .promotions-item-text {
         margin-top: 20px;
         font-size: 15px;
@@ -956,7 +970,7 @@ body {
           text-align: left;
           width: 350px;
           padding: 13px 0 15px 17px;
-          background: transparent;
+          background: $bg-color;
           border: 1px solid $violet-second;
           margin-bottom: 20px;
           color: $white-color;
@@ -1653,5 +1667,45 @@ body {
     svg {
       fill: $violet-first;
     }
+  }
+}
+
+
+.cookie{
+  position: fixed;
+  bottom: 30px;
+  left:20px;
+  padding: 20px;
+  background: $bg-color;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 330px ;
+  color: $white-color;
+  display:none;
+  font-family: Panton-Regular,sans-serif;
+  .cookie-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    font-family: Panton-ExtraBold, sans-serif;
+    .cookie-accept svg{
+      width:20px;
+      height:20px;
+      fill: $white-color;
+      cursor:pointer;
+    }
+  }
+  .cookie-text{
+    font-size: 16px;
+    line-height: 20px;
+    margin-top:10px;
+  }
+  .cookie-button .button{
+    border:0;
+    outline: none;
+    margin-top:10px;
+    width: 100%;
+
   }
 }

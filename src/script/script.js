@@ -5,7 +5,7 @@ $(document).ready(function () {
     const header = $('.header');
     const windowScrollTop = $('#scroll-top');
     $(window).scroll(function () {
-        $(window).scrollTop() > 0 ? header.css('background', 'rgba(7, 0, 21)')  : header.css('background', 'none');
+        $(window).scrollTop() > 0 ? header.css('background', 'rgba(7, 0, 21)') : header.css('background', 'none');
         $(window).scrollTop() > 0 ? windowScrollTop.css('opacity', '1') : windowScrollTop.css('opacity', '0');
     });
 
@@ -14,7 +14,7 @@ $(document).ready(function () {
         $('.form')[0].scrollIntoView({behavior: 'smooth'});
     });
 
-    windowScrollTop.click(()=>{
+    windowScrollTop.click(() => {
         $('.main')[0].scrollIntoView({behavior: 'smooth'});
     });
 
@@ -544,7 +544,7 @@ $(document).ready(function () {
     const food = $('#food');
     const windowInnerScreen = $(window).innerWidth();
     let currentPage = 1;
-    let itemsPerPage = windowInnerScreen > 768 ? 4 : windowInnerScreen >450 && windowInnerScreen <768 ? 3: 2;
+    let itemsPerPage = windowInnerScreen > 768 ? 4 : windowInnerScreen > 450 && windowInnerScreen < 768 ? 3 : 2;
     let filteredProducts = []; // Делаем глобальной
 
     function renderProducts(category) {
@@ -561,7 +561,7 @@ $(document).ready(function () {
 
         let htmlContent = '';
         productsToShow.forEach((item) => {
-                htmlContent += `
+            htmlContent += `
                 <div class="products-item wow animate__fadeInUp">
                     <div class="products-item-text">
                         <div class="products-item-title">${item['title']}</div>
@@ -581,6 +581,7 @@ $(document).ready(function () {
         $('#next-page').prop('disabled', currentPage === totalPages || totalPages === 0);
         $('#pagination-info').text(`${currentPage} / ${totalPages}`);
     }
+
     function setActiveCategory(category) {
         localStorage.setItem('activeCategory', category);
         renderProducts(category);
@@ -594,17 +595,18 @@ $(document).ready(function () {
         $(`#${categoryId}`).addClass('active');
         $(`#${categoryId}`).next('.border-bot').css('opacity', '1');
     }
+
     const savedCategory = localStorage.getItem('activeCategory') || 'кальяны';
     setActiveCategory(savedCategory);
 // Инициализация обработчиков один раз при загрузке
-    $('#prev-page').on('click', function() {
+    $('#prev-page').on('click', function () {
         if (currentPage > 1) {
             currentPage--;
             updatePagination();
         }
     });
 
-    $('#next-page').on('click', function() {
+    $('#next-page').on('click', function () {
         const totalPages = Math.ceil(filteredProducts.length / itemsPerPage);
         if (currentPage < totalPages) {
             currentPage++;
@@ -618,7 +620,7 @@ $(document).ready(function () {
     }
 
 // Обработчики кликов для категорий
-    hookah.click(function() {
+    hookah.click(function () {
         $('.menu-item-link').removeClass('active');
         $('.border-bot').css('opacity', '0');
         $(this).addClass('active');
@@ -626,7 +628,7 @@ $(document).ready(function () {
         setActiveCategory('кальяны');
     });
 
-    food.click(function() {
+    food.click(function () {
         $('.menu-item-link').removeClass('active');
         $('.border-bot').css('opacity', '0');
         $(this).addClass('active');
@@ -634,7 +636,7 @@ $(document).ready(function () {
         setActiveCategory('блюда');
     });
 
-    drink.click(function() {
+    drink.click(function () {
         $('.menu-item-link').removeClass('active');
         $('.border-bot').css('opacity', '0');
         $(this).addClass('active');
@@ -642,7 +644,7 @@ $(document).ready(function () {
         setActiveCategory('чай и б/а коктейли');
     });
 
-    bar.click(function() {
+    bar.click(function () {
         $('.menu-item-link').removeClass('active');
         $('.border-bot').css('opacity', '0');
         $(this).addClass('active');
@@ -833,6 +835,14 @@ $(document).ready(function () {
             }
             currentWidth = newWidth;
         });
+    });
+
+    if (!localStorage.getItem('cookieAccepted')) {
+        $('.cookie').show();
+    }
+    $('.cookie-accept').click(() => {
+        $('.cookie').hide();
+        localStorage.setItem('cookieAccepted', '1');
     });
 
 
